@@ -32,6 +32,15 @@ To function properly the SDK requires the **'Always'** location permission and t
  pod "changers-ios-sdk", :git => 'https://github.com/Changers/changers-ios-sdk.git'
 ```
 
+### Manually
+
+You can also drag and drop the Changers SDK [here](https://github.com/Changers/changers-ios-sdk/tree/master/ChangersSDK.framework) but we recommend using cocoapods to remain up to date.
+
+```
+  Manually drag and drop `ChangersSDK.framework` to your project
+```
+
+### MotionTagSDK
 
 **MotionTagSDK** needs to be installed manually to your project. MotionTagSDK available [Here](https://github.com/Changers/changers-ios-sdk/tree/master/MotionTagSDK.xcframework)
 
