@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>DeviceList.plist</key>
+		<data>
+		wyPLVyXzhZr9qTJv8JFTLNl9Gko=
+		</data>
+		<key>Headers/MotionTag.h</key>
+		<data>
+		Y40Q1UUxRcAMTmCaajEEp0S1Gm0=
+		</data>
+		<key>Headers/MotionTagLib.h</key>
+		<data>
+		CImHZ1EpiRPJX6y7p6YOxwWvKhc=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		wn6oaQRPdKKdhOZQrbuTvlWebbk=
+		</data>
+		<key>LICENSE</key>
+		<data>
+		aEpu/jXoDGj2XyxdCafe5yLlHek=
+		</data>
+		<key>LICENSE.txt</key>
+		<data>
+		HdHM78aap9bGNgSpw45ugbZdwec=
+		</data>
+		<key>MappingV1ToV2.cdm</key>
+		<data>
+		K7IZRUdeDKfXGIEGm3+WG5Iu06c=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		JK3go/hHyPrQ03sIN+fFoHuxn6Y=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 10.mom</key>
+		<data>
+		s+3+JubDB55caef3aF0DMMr67GA=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 11.mom</key>
+		<data>
+		/V1ZorLknM23fb25wdKtO9P3C3w=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 12.mom</key>
+		<data>
+		B253isK8DSaSXDreiDInWYHU4JY=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 13.mom</key>
+		<data>
+		BkGTKrjErZQUKDg54yCzDN0e5Eg=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 14.mom</key>
+		<data>
+		kNNN0FwwXWLhzwD3SKA7d1eZjFM=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 15.mom</key>
+		<data>
+		Bgw/Px3MnCTvzEsjs3XHzeO6gzA=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 16.mom</key>
+		<data>
+		cj3PUWbbT20hd0x6o8FcjGzgvn8=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 17.mom</key>
+		<data>
+		S93/UnGSuQZSWjiTWhFWnumbF0U=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 18.mom</key>
+		<data>
+		dAHJcHrkD1PtEDCT6lW84R3JjtA=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 19.mom</key>
+		<data>
+		dXcVYV81l81iizO+TEsD4xAw6vU=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 2.mom</key>
+		<data>
+		cGrbaZ0D/+34R4TIz8Vm3rB1JLU=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 20.mom</key>
+		<data>
+		P6nsPcJxUyzdpnp5C75rK5I03V8=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 20.omo</key>
+		<data>
+		FGyhyP8znKH/9P+ZUd4OVO4kP7k=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 3.mom</key>
+		<data>
+		U4ymrsChIxm5QSmjQVOcE1ifYvQ=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 4.mom</key>
+		<data>
+		uSdtuVLQIpvjl96Y0zodV/0fJ4w=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 5.mom</key>
+		<data>
+		zg4kY2yIi11ZQzurZi1izAL8Wug=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 6.mom</key>
+		<data>
+		xkY4v3PUbLDyNZ8gmA51NASi4GA=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 7.mom</key>
+		<data>
+		U/nMVSf0hOZYUJlI2yb7gVTR/L8=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 8.mom</key>
+		<data>
+		xkY4v3PUbLDyNZ8gmA51NASi4GA=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 9.mom</key>
+		<data>
+		Ko+AL0oQp7tGX2itmH6LsBwTiEQ=
+		</data>
+		<key>MotionTagDataModel.momd/MotionTagDataModel.mom</key>
+		<data>
+		fZsvTNjJSZwwDNgeF6BixV30PaE=
+		</data>
+		<key>MotionTagDataModel.momd/VersionInfo.plist</key>
+		<data>
+		oL58q47oJiCCwjzJE2DAghu1qlg=
+		</data>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>DeviceList.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5cB5bRDMybbNeM7V4euE+KzUcPT5v/+Z9Zaz+ZsoNos=
+			</data>
+		</dict>
+		<key>Headers/MotionTag.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tIc9Qo0AndyknQ5Pr2Gpo0B/ZSd+6jfeNtb/UZpvggc=
+			</data>
+		</dict>
+		<key>Headers/MotionTagLib.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zoi36FLY/TK6Y785q7yd2LcRQ2qAtPwiYuDH/NeftIQ=
+			</data>
+		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			c7jGQ/P1qXDwoxx01BFoo6pWMGHHPUlg/OTzJmVEEcw=
+			</data>
+		</dict>
+		<key>LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EPMLcuSg29Qj2gTJPeQ3oTfLBELpi9ZJBD6tPycSBtE=
+			</data>
+		</dict>
+		<key>MappingV1ToV2.cdm</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y7QLx6TGgjO4eXho8GT5wp0Biu14ToSZtOm1HzdneDI=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TjAMEjbOaW2cTEV/z1lufUNN0T7byzsv1dwC+6QkhCo=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 10.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5PBke8o93D74WaMM902JsVsnA/lc9BqDy2KxM6CO0cg=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 11.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VQA7JFp63zTeSd7S8ZlcOnQHsIXxxxFRt7x5AYXrVjo=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 12.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wwu03j5+IzLpqZZtmYiGYqZ/MVyYgJy5nOevIz3gKVE=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 13.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QiB9yL2qbtCx9qETdSpIbkYWVtlTDFvQ5kOXMLEQuqQ=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 14.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qy2ayDvk1Y81qJIFWrIohKgleG+er4Em2BTrVGvHSb0=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 15.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vYN/z7dTSHLN3S78d2TefD6RmzlltbdCxLpoy7KQJG8=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 16.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wSid24LxLqrZfGtJrxUOCrGjNLZA6ATV+Dn0YlRghU0=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 17.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zj6UkMkrUAjNl951qvOn0uZhxBlTzFwScz0eL9veQIE=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 18.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rYIJaabssQ8LC+MwAEKwYE0tHQo+NtIRAnsQ5YdoRds=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 19.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CuOx6ctICkhrWP6amf0zySurPQb+AhdPLuKLgkpP6T0=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 2.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UVXh/COTKF9qspFL18p9fkNEiYC/liEPQv2aROey0Pw=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 20.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jyZrl4YpimpZzwYKFfF0N+CGvfupk37X3h28XVZ9+J0=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 20.omo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eFpr9K0gg0OzIgRbErbjCpCB30M/WU5pTj9GPFGugKI=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 3.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			whqkusPggpKPd+bhXRPXOqyyUl03evHt9Mw5V6T72jc=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 4.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LfsnY/3c6iDOMxTj35wKaBooB6L7McoRYoVOkN6Rb4s=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 5.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pB0gMAj69sYdLRMbiYk/FDnYh7NM8OVrRPTSXJo5z3M=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 6.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vz90/Lp94e6qqt2VZyjwmyFvn5URok27MwUUOn8lPV0=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 7.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AX0IZ08Y+a9ID5fvw43OwO6Y/lz30qnG6e1/GCZCfT8=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 8.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vz90/Lp94e6qqt2VZyjwmyFvn5URok27MwUUOn8lPV0=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel 9.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8+irk2lBb2ERE0qxXKEeJM9AGkUehOc5rZPB3rhib8g=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/MotionTagDataModel.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eTX6LppjQgQYIPP42zzbyG/GVl+W/IES+QCe9ax2/Xg=
+			</data>
+		</dict>
+		<key>MotionTagDataModel.momd/VersionInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4bZxWuO3Vy0MHGQF4bhl7lKSFxGpLQH0q8ve4iRx4Bw=
+			</data>
+		</dict>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^.*</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
+		<key>^.*</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^embedded\.provisionprofile$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
