@@ -19,27 +19,33 @@ The SDK requires two authorizations:
 Both authorizations are requested by the Changers SDK when needed.
 
 ### Automatic Tracking
-To function properly the SDK requires the **'Always'** location permission. 
+To function properly the SDK requires the **'Always'** location permission and the **Motion & Fitness** permission.
 
 
 ## 1. Installation
 
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+ pod "changers-ios-sdk", :git => 'https://github.com/Changers/changers-ios-sdk.git'
 ```
-  Manually drag and drop `ChangersSDK.framework` to Your project
-  Manually drag and drop `MotionTagSDK.framework` to Your project
+
+
+**MotionTagSDK** needs to be installed manually to your project. MotionTagSDK available [Here](https://github.com/Changers/changers-ios-sdk/tree/master/MotionTagSDK.xcframework)
+
 
 ```
-ChangersSDK available [Here](https://github.com/Changers/Sample-iOS-SDK/tree/master/Sample%20Changers%20iOS%20SDK)
-
-
-MotionTagSDK available [Here](https://github.com/Changers/Sample-iOS-SDK/tree/master/Sample%20Changers%20iOS%20SDK)
-
+  Manually drag and drop `MotionTagSDK.xcframework` to Your project
+```
 
   
 ## 2. Interface 
 
 ```
 func initSDK(with config: ChangersConfig, uuid: UUID?)
+func cleanState()
 func setDelegate(_ delegate: ChangersDelegate?)
 func setup()
 ```
@@ -100,6 +106,13 @@ if `Changers.isReady == false` we will need to call `changers.setup()` and wait 
 
 The reason is that the app may need additional time to finalize its initial (e.g. necessary data migrations, or API calls in order to init the user with the Changers Back end, if it's not ready it's mostly due to API request timeout, the init happens once to register the user with the Changers Backend or to log the user in )
 
+
+Reset the SDK in order to log an user in with existing credentials. If you do not provide credentials to the SDK on loading it will register a new user. If you need to login an user after the SDK has been loaded, then `cleanState()` is required before calling `changers.initSDK(with: changersConfig with: changersUUID)` again.
+
+```
+	func cleanState()
+```
+
 ## 5. Callbacks
 
 ### Optional
@@ -124,5 +137,5 @@ enum ChangersSDKError: Error {
 
 ## 7. Example
 
-Checkout the "Sample Changers iOS SDK" folder [here](https://github.com/Changers/Sample-iOS-SDK/tree/master/Sample%20Changers%20iOS%20SDK%20)  for an example application.
+Checkout the "Sample Changers iOS SDK" folder [here](https://github.com/Changers/changers-ios-sdk/tree/master/Sample)  for an example application.
 
