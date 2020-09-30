@@ -25,3 +25,6 @@ Sample/Pods/changers-ios-sdk/ChangersSDK.framework/Modules/ChangersSDK.swiftmodu
 Sample/Pods/changers-ios-sdk/ChangersSDK.framework/Modules/module.modulemap
 Sample/Pods/changers-ios-sdk/README.md
 Sample/Pods/Local Podspecs/changers-ios-sdk.podspec.json
+archives/
+derived_data/
+build/
