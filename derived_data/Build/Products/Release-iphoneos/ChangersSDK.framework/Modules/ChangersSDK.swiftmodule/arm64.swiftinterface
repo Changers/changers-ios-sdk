@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChangersSDK
+import CoreLocation
+import CoreMotion
+import Foundation
+import MessageUI
+import MotionTagSDK
+import SafariServices
+import Social
+import Swift
+import UIKit
+import WebKit
+public enum ChangersAuthenticateError : Swift.Error {
+  case unknownError
+  case connectionError
+  case credentialsError
+  case configError
+  public static func == (a: ChangersSDK.ChangersAuthenticateError, b: ChangersSDK.ChangersAuthenticateError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension ChangersAuthenticateError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol ChangersDelegate : AnyObject {
+  func setupDidFinish(with uiid: Swift.String)
+  func setupDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+}
+public enum ChangersEnv : Swift.String {
+  case stage
+  case production
+  case development
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ChangersConfig {
+  public init(clientId: Swift.Int, clientSecret: Swift.String, clientName: Swift.String, environment: ChangersSDK.ChangersEnv = .stage)
+}
+public typealias UUID = Swift.String
+@objc @_inheritsConvenienceInitializers public class Changers : ObjectiveC.NSObject {
+  public static let versionSDK: Swift.String
+  public static let versionBuildSDK: Swift.String
+  weak public var delegate: ChangersSDK.ChangersDelegate?
+  public static var isReady: Swift.Bool {
+    get
+  }
+  public static func loadWebApp(on viewController: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil)
+  public static func webApp() -> UIKit.UIViewController
+  public var debug: Swift.Bool {
+    get
+    set
+  }
+  public func initSDK(with config: ChangersSDK.ChangersConfig, uuid: ChangersSDK.UUID?)
+  public func setup()
+  public func cleanState()
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension ChangersSDK.ChangersAuthenticateError : Swift.Equatable {}
+extension ChangersSDK.ChangersAuthenticateError : Swift.Hashable {}
+extension ChangersSDK.ChangersEnv : Swift.Equatable {}
+extension ChangersSDK.ChangersEnv : Swift.Hashable {}
+extension ChangersSDK.ChangersEnv : Swift.RawRepresentable {}
