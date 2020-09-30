@@ -1,18 +1,17 @@
 
 Pod::Spec.new do |s|
     s.name         = "changers-ios-sdk"
-    s.version      = "1.0.5"
+    s.version      = "1.1.0"
     s.summary      = "A brief description of Changers iOS SDK project."
     s.description  = <<-DESC
     An extended description of Changers iOS SDK project.
     DESC
     s.homepage     = "https://changers.com/"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
-                   Copyright 2020
-                   Permission is granted to...
+                   Copyright 2020             
                   LICENSE
                 }
-    s.author             = { "xGoPox" => "yerochewski@gmail.com" }
+    s.author             = { "Clement Yerochewski" => "c.yerochewski@changers.com" }
     s.source       = { :git => "https://github.com/Changers/changers-ios-sdk.git", :tag => "#{s.version}" }
     s.public_header_files = "ChangersSDK.framework/Headers/*.h"
     s.source_files = "ChangersSDK.framework/Headers/*.h"
