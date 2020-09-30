@@ -31,3 +31,4 @@ lipo -create build/simulator/ChangersSDK.framework/ChangersSDK  build/devices/Ch
 
 # copy simulator Swift public interface to universal framework
 cp -rf build/simulator/ChangersSDK.framework/Modules/ChangersSDK.swiftmodule/* build/universal/ChangersSDK.framework/Modules/ChangersSDK.swiftmodule
+cp -rf build/universal/ChangersSDK.framework ./
