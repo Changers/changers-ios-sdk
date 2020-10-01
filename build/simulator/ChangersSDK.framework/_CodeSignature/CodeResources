@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bm0n0kXWrjNe9SGf7D4iJg5fX28=
+		OZt5X//g9uTsw5WyUjF1SoGaTf8=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/ChangersSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		h/e30lWVSwylgtYRK0asLqSSqe8=
+		O0orXD8PJ38M7Jl656WCKJpYT0w=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/ChangersSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		h/e30lWVSwylgtYRK0asLqSSqe8=
+		O0orXD8PJ38M7Jl656WCKJpYT0w=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cJNhM1lNeSB8+NxZ13m6e3G42Hs=
+		Uz4NNHSRG+cImrH52g6PODJgC2E=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		csPQVCLBnHtuhIAnV/4sj9g5S1U=
+		q8PfyeFkaShpW767Om7/BayfJWM=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kolJHbbyJFoBGcbbVFLJ/CSeGSQ=
+		KyEQIIqFKbW1Y5evZF4RTRrOGL8=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		cJNhM1lNeSB8+NxZ13m6e3G42Hs=
+		Uz4NNHSRG+cImrH52g6PODJgC2E=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		csPQVCLBnHtuhIAnV/4sj9g5S1U=
+		q8PfyeFkaShpW767Om7/BayfJWM=
 		</data>
-		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		kolJHbbyJFoBGcbbVFLJ/CSeGSQ=
+		KyEQIIqFKbW1Y5evZF4RTRrOGL8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,60 +87,60 @@
 			83y9EqEHCpI7ri4pvaqus0SrNyO6suaAw9FiGoND8bs=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/ChangersSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uBV3y07zJ1KWMUnzKXv2vMazuR6pN8vjFsM5/N0RvS0=
+			8odF75ThLPeLtAFpgBh+LttJu9sXlG1Djlno3cbfCek=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/ChangersSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uBV3y07zJ1KWMUnzKXv2vMazuR6pN8vjFsM5/N0RvS0=
+			8odF75ThLPeLtAFpgBh+LttJu9sXlG1Djlno3cbfCek=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0fpOBYMBtuL7w1zxzGz0wUbrUmCDiLfAexbOjaMn9E=
+			KCVY2cYj/12eBi3lyk6OzwemY/ifP3TJL/ICmal1GZE=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E/SOrBhXqjuA4wOKa69wZeHetDSXZjxE27uF3nuayQ0=
+			J7eiyapZsuu1uf0WjCTHu4qd8q/EsqHLKJbZZTRxTHE=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Litzd2PbhEqBqfLkMgp3a2Pc1zK8VHTOVRxet0dyPEI=
+			amcx2ubf1IkmTjHyWqVxBkIAb799jiE43L7ls1wcv7w=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0fpOBYMBtuL7w1zxzGz0wUbrUmCDiLfAexbOjaMn9E=
+			KCVY2cYj/12eBi3lyk6OzwemY/ifP3TJL/ICmal1GZE=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E/SOrBhXqjuA4wOKa69wZeHetDSXZjxE27uF3nuayQ0=
+			J7eiyapZsuu1uf0WjCTHu4qd8q/EsqHLKJbZZTRxTHE=
 			</data>
 		</dict>
-		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Litzd2PbhEqBqfLkMgp3a2Pc1zK8VHTOVRxet0dyPEI=
+			amcx2ubf1IkmTjHyWqVxBkIAb799jiE43L7ls1wcv7w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

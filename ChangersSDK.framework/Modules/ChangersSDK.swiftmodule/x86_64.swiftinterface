@@ -58,6 +58,10 @@ public typealias UUID = Swift.String
     get
     set
   }
+  public var maxDebug: Swift.Bool {
+    get
+    set
+  }
   public func initSDK(with config: ChangersSDK.ChangersConfig, uuid: ChangersSDK.UUID?)
   public func setup()
   public func cleanState()
