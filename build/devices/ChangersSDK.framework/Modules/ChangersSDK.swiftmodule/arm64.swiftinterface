@@ -65,6 +65,7 @@ public typealias UUID = Swift.String
   public func initSDK(with config: ChangersSDK.ChangersConfig, uuid: ChangersSDK.UUID?)
   public func setup()
   public func cleanState()
+  public func referralLink(_ str: Swift.String?) -> Swift.Bool
   @objc deinit
   @objc override dynamic public init()
 }
