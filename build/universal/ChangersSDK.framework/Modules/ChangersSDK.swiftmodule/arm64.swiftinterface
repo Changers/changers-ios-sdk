@@ -8,6 +8,7 @@ import MessageUI
 import MotionTagSDK
 import SafariServices
 import Social
+import StoreKit
 import Swift
 import UIKit
 import WebKit
