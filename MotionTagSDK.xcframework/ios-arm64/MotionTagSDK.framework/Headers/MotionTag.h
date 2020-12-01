@@ -9,13 +9,12 @@
 #ifndef MotionTag_h
 #define MotionTag_h
 
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
 #define kMTDataTransferMode @"kMTDataTransferMode"
 #define kMTBatterySavingsMode @"kMTBatterySavingsMode"
 #define kMTSendingMode @"kMTSendingMode"
-
-#import <Foundation/Foundation.h>
-
-@import CoreLocation;
 
 typedef NS_ENUM(NSUInteger, MTDataTransferMode) {
     kDataTransferModeWifiOnly NS_SWIFT_NAME(wifiOnly),
@@ -50,7 +49,9 @@ typedef NS_ENUM(NSUInteger, MTDataTransferMode) {
 
 @protocol MotionTagDelegate <NSObject>
 @optional
-- (void)locationManager:(nonnull CLLocationManager*)locationManager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+- (void)trackingStatusChanged:(BOOL) isTracking;
+- (void)locationAuthorizationStatusDidChange:(CLAuthorizationStatus)status precise:(BOOL)precise;
+- (void)motionActivityAuthorized:(BOOL)authorized;
 - (void)didTrackLocation:(nonnull CLLocation*)location;
 - (void)didTransmitData:(nonnull NSDate*)transmissionTimestamp lastEventTimestamp:(nonnull NSDate*)lastEventTimestamp;
 @end

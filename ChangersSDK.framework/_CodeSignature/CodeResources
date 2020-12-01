@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<data>
-		iyprd0yuILtJceYgvGwelmhiA4M=
+		C7DRCLBZUBb5x/5xRDqXrPJil0M=
 		</data>
 		<key>Headers/changers_sdk.h</key>
 		<data>
@@ -14,39 +14,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9Wlbdfn4Oqq2hrlySDWMcrXBq0I=
+		GKmhO9Vt9KjVoIT8IX5NLO9opYE=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		E7aih8YlCQOBEGYfwmHVT1tFhkI=
+		aB4Ukw21oQ7rPLEZZUgP6BoEmoA=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		E7aih8YlCQOBEGYfwmHVT1tFhkI=
+		aB4Ukw21oQ7rPLEZZUgP6BoEmoA=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		cJNhM1lNeSB8+NxZ13m6e3G42Hs=
+		y9RieiOMqimNBjErpZg0oInch5s=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		bSljq5RKTHnHY5ZOG10PrNqH0+0=
+		Zl01j0OsaEhMr/+Qa1S+YXFmrZI=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sVy+yfCUfy+0gbjUWXtZo9K04Co=
+		qQn6fNNWUPTcTa5yrK38Cxo0zB0=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		cJNhM1lNeSB8+NxZ13m6e3G42Hs=
+		y9RieiOMqimNBjErpZg0oInch5s=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		bSljq5RKTHnHY5ZOG10PrNqH0+0=
+		Zl01j0OsaEhMr/+Qa1S+YXFmrZI=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		sVy+yfCUfy+0gbjUWXtZo9K04Co=
+		qQn6fNNWUPTcTa5yrK38Cxo0zB0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,7 +65,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/KL7jHa1xp6/Ij+zWWv89uknDao=
+			MU9hjAqy2A8gKaRS+AlwtczP6O0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MU9hjAqy2A8gKaRS+AlwtczP6O0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -77,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w7lezmivU1flvspapNp/3Qp5BNz3afmKjea6VZRyYhs=
+			ytzeGpLhamNulTGxfMbPIYm21cbXMhA3VGJTOcF8lLg=
 			</data>
 		</dict>
 		<key>Headers/changers_sdk.h</key>
@@ -91,56 +100,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ccLrSzZgooCZ9tJ0BgqHQyQV+YHz3nrT3ogm4qMshLE=
+			2HeugAbUJlaoMlqZPiJiatUz/ZGNzsTvyohjiAdV+ys=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ccLrSzZgooCZ9tJ0BgqHQyQV+YHz3nrT3ogm4qMshLE=
+			2HeugAbUJlaoMlqZPiJiatUz/ZGNzsTvyohjiAdV+ys=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0fpOBYMBtuL7w1zxzGz0wUbrUmCDiLfAexbOjaMn9E=
+			v8sdGE65GHkIg9rozbohYQR2O4jUdNs31ATbNGKzxYI=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RD0fdnZNSqG9xXkUKve3zZRZ6wZEEjJwdwJW226Iw24=
+			pvERr4BzNhjy8wkkShhHI/EVMorQ+37XAaKH6fJWDE0=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BHDQPu5maLT5oGZXMhycZyPQqjFercR2idXuGyE/StM=
+			AOBdfBQM7RGn9cQYneT23m83kqfGSs5NcvzQtVeT9Go=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0fpOBYMBtuL7w1zxzGz0wUbrUmCDiLfAexbOjaMn9E=
+			v8sdGE65GHkIg9rozbohYQR2O4jUdNs31ATbNGKzxYI=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RD0fdnZNSqG9xXkUKve3zZRZ6wZEEjJwdwJW226Iw24=
+			pvERr4BzNhjy8wkkShhHI/EVMorQ+37XAaKH6fJWDE0=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BHDQPu5maLT5oGZXMhycZyPQqjFercR2idXuGyE/StM=
+			AOBdfBQM7RGn9cQYneT23m83kqfGSs5NcvzQtVeT9Go=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,7 +172,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pfJUWwG8mml/iJdGXviQOkFjIPVKIiSVhpiF5eJ+z0Q=
+			AD2gFPTvl1TjKKBmZUPJV1JDmLgE+iXISzLWQhZJBR0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AD2gFPTvl1TjKKBmZUPJV1JDmLgE+iXISzLWQhZJBR0=
 			</data>
 			<key>optional</key>
 			<true/>
