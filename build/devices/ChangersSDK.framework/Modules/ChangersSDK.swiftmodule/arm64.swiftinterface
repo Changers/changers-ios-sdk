@@ -12,8 +12,6 @@ import StoreKit
 import Swift
 import UIKit
 import WebKit
-public struct ChangersStatistic {
-}
 public enum ChangersAuthenticateError : Swift.Error {
   case unknownError
   case connectionError
@@ -24,6 +22,20 @@ public enum ChangersAuthenticateError : Swift.Error {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
+}
+public struct Statistic : Swift.Codable {
+  public let user: ChangersSDK.Statistic.StatisticUser
+  public let organisation: ChangersSDK.Statistic.StatisticGlobal
+  public struct StatisticGlobal : Swift.Codable {
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct StatisticUser : Swift.Codable {
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension ChangersAuthenticateError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -36,7 +48,7 @@ public protocol ChangersDelegate : AnyObject {
 }
 public protocol ChangersStatisticDelegate : AnyObject {
   func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
-  func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic?)
+  func statisticDidSuccess(with statistic: ChangersSDK.Statistic)
 }
 public enum ChangersEnv : Swift.String {
   case stage
