@@ -23,9 +23,9 @@ public enum ChangersAuthenticateError : Swift.Error {
   }
   public func hash(into hasher: inout Swift.Hasher)
 }
-public struct Statistic : Swift.Codable {
-  public let user: ChangersSDK.Statistic.StatisticUser
-  public let organisation: ChangersSDK.Statistic.StatisticGlobal
+public struct ChangersStatistic : Swift.Codable {
+  public let user: ChangersSDK.ChangersStatistic.StatisticUser
+  public let organisation: ChangersSDK.ChangersStatistic.StatisticGlobal
   public struct StatisticGlobal : Swift.Codable {
     public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
@@ -48,7 +48,7 @@ public protocol ChangersDelegate : AnyObject {
 }
 public protocol ChangersStatisticDelegate : AnyObject {
   func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
-  func statisticDidSuccess(with statistic: ChangersSDK.Statistic)
+  func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic)
 }
 public enum ChangersEnv : Swift.String {
   case stage
