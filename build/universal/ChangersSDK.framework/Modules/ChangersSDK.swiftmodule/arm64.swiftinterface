@@ -12,6 +12,8 @@ import StoreKit
 import Swift
 import UIKit
 import WebKit
+public struct ChangersStatistic {
+}
 public enum ChangersAuthenticateError : Swift.Error {
   case unknownError
   case connectionError
@@ -31,6 +33,8 @@ extension ChangersAuthenticateError : Foundation.LocalizedError {
 public protocol ChangersDelegate : AnyObject {
   func setupDidFinish(with uiid: Swift.String)
   func setupDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic?)
 }
 public enum ChangersEnv : Swift.String {
   case stage
@@ -67,6 +71,7 @@ public typealias UUID = Swift.String
   public func setup()
   public func cleanState()
   public func referralLink(_ str: Swift.String?) -> Swift.Bool
+  public func fetchStatistic()
   @objc deinit
   @objc override dynamic public init()
 }
