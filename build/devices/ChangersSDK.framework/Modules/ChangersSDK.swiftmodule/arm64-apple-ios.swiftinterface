@@ -33,6 +33,8 @@ extension ChangersAuthenticateError : Foundation.LocalizedError {
 public protocol ChangersDelegate : AnyObject {
   func setupDidFinish(with uiid: Swift.String)
   func setupDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+}
+public protocol ChangersStatisticDelegate : AnyObject {
   func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
   func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic?)
 }
@@ -54,6 +56,7 @@ public typealias UUID = Swift.String
   public static let versionSDK: Swift.String
   public static let versionBuildSDK: Swift.String
   weak public var delegate: ChangersSDK.ChangersDelegate?
+  weak public var statisticDelegate: ChangersSDK.ChangersStatisticDelegate?
   public static var isReady: Swift.Bool {
     get
   }
