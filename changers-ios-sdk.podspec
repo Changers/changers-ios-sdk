@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "changers-ios-sdk"
-    s.version      = "1.5.0"
+    s.version      = "1.5.1"
     s.summary      = "A brief description of Changers iOS SDK project."
     s.description  = <<-DESC
     An extended description of Changers iOS SDK project.

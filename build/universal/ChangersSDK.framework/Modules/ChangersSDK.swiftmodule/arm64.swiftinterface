@@ -34,22 +34,23 @@ public struct ChangersStatistic : Swift.Codable {
     public var totalTreesPlanted: Swift.Int {
       get
     }
-    public struct TreePlantingEntity : Swift.Codable {
-      public init(from decoder: Swift.Decoder) throws
-      public func encode(to encoder: Swift.Encoder) throws
-    }
-    public struct TreePlanting : Swift.Codable {
-      public init(from decoder: Swift.Decoder) throws
-      public func encode(to encoder: Swift.Encoder) throws
-    }
     public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct StatisticGlobal : Swift.Codable {
+    public let walkingDistance: Swift.Double
+    public let cyclingDistance: Swift.Double
+    public let co2Avoided: Swift.Double
+    public let coins: Swift.Double
     public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct StatisticUser : Swift.Codable {
+    public let walkingDistance: Swift.Double
+    public let cyclingDistance: Swift.Double
+    public let co2Avoided: Swift.Double
+    public let coins: Swift.Double
+    public let co2ForNextCoin: Swift.Double?
     public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
   }
