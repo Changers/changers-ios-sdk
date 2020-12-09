@@ -26,6 +26,25 @@ public enum ChangersAuthenticateError : Swift.Error {
 public struct ChangersStatistic : Swift.Codable {
   public let user: ChangersSDK.ChangersStatistic.StatisticUser
   public let organisation: ChangersSDK.ChangersStatistic.StatisticGlobal
+  public let charity: ChangersSDK.ChangersStatistic.Charity?
+  public struct Charity : Swift.Codable {
+    public var userTreesPlanted: Swift.Int {
+      get
+    }
+    public var totalTreesPlanted: Swift.Int {
+      get
+    }
+    public struct TreePlantingEntity : Swift.Codable {
+      public init(from decoder: Swift.Decoder) throws
+      public func encode(to encoder: Swift.Encoder) throws
+    }
+    public struct TreePlanting : Swift.Codable {
+      public init(from decoder: Swift.Decoder) throws
+      public func encode(to encoder: Swift.Encoder) throws
+    }
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
   public struct StatisticGlobal : Swift.Codable {
     public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
@@ -65,8 +84,9 @@ public struct ChangersConfig {
 }
 public typealias UUID = Swift.String
 @objc @_inheritsConvenienceInitializers public class Changers : ObjectiveC.NSObject {
-  public static let versionSDK: Swift.String
-  public static let versionBuildSDK: Swift.String
+  public static var versionSDK: Swift.String {
+    get
+  }
   weak public var delegate: ChangersSDK.ChangersDelegate?
   weak public var statisticDelegate: ChangersSDK.ChangersStatisticDelegate?
   public static var isReady: Swift.Bool {
