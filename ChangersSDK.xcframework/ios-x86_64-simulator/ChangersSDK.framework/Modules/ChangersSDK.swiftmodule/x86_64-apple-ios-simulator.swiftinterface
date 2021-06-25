@@ -1,0 +1,141 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChangersSDK
+import AVFoundation
+import CoreLocation
+import CoreMotion
+import Foundation
+import MapKit
+import MessageUI
+import MotionTagSDK
+import SafariServices
+import Social
+import StoreKit
+import Swift
+import UIKit
+import WebKit
+public enum ChangersAuthenticateError : Swift.Error {
+  case unknownError
+  case connectionError
+  case credentialsError
+  case configError
+  public static func == (a: ChangersSDK.ChangersAuthenticateError, b: ChangersSDK.ChangersAuthenticateError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ChangersStatistic : Swift.Codable {
+  public let user: ChangersSDK.ChangersStatistic.StatisticUser
+  public let organisation: ChangersSDK.ChangersStatistic.StatisticGlobal
+  public let charity: ChangersSDK.ChangersStatistic.Charity?
+  public struct Charity : Swift.Codable {
+    public var userTreesPlanted: Swift.Int {
+      get
+    }
+    public var totalTreesPlanted: Swift.Int {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct StatisticGlobal : Swift.Codable {
+    public let walkingDistance: Swift.Double
+    public let cyclingDistance: Swift.Double
+    public let co2Avoided: Swift.Double
+    public let coins: Swift.Double
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct StatisticUser : Swift.Codable {
+    public let walkingDistance: Swift.Double
+    public let cyclingDistance: Swift.Double
+    public let co2Avoided: Swift.Double
+    public let coins: Swift.Double
+    public let co2ForNextCoin: Swift.Double?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension ChangersAuthenticateError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol ChangersAuthenticationDelegate : AnyObject {
+  func didUpdateCredentials(with uiid: Swift.String)
+}
+public protocol ChangersDelegate : AnyObject {
+  func setupDidFinish()
+  func setupDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+}
+public protocol ChangersStatisticDelegate : AnyObject {
+  func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic)
+}
+public protocol ChangersNotificationDelegate : AnyObject {
+  func notificationCredentialsDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func notificationCredentialsDidSuccess(with notificationIdentifier: Swift.String, userId: Swift.String, header: [Swift.String : Swift.String])
+  func notification(enabled: Swift.Bool)
+}
+public enum ChangersEnv : Swift.String {
+  case stage
+  case production
+  case development
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ChangersConfig {
+  public init(clientId: Swift.Int, clientSecret: Swift.String, clientName: Swift.String, environment: ChangersSDK.ChangersEnv = .stage)
+}
+public typealias UUID = Swift.String
+@objc @_inheritsConvenienceInitializers public class Changers : ObjectiveC.NSObject {
+  public static var versionSDK: Swift.String {
+    get
+  }
+  weak public var delegate: ChangersSDK.ChangersDelegate?
+  weak public var authenticationDelegate: ChangersSDK.ChangersAuthenticationDelegate?
+  weak public var statisticDelegate: ChangersSDK.ChangersStatisticDelegate?
+  weak public var notificationDelegate: ChangersSDK.ChangersNotificationDelegate?
+  public var isReady: Swift.Bool {
+    get
+  }
+  public static func loadWebApp(on viewController: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil, dismissCompletion: (() -> Swift.Void)? = nil)
+  public static func webApp(dismissCompletion: (() -> Swift.Void)? = nil) -> UIKit.UIViewController
+  public var debug: Swift.Bool {
+    get
+    set
+  }
+  public var maxDebug: Swift.Bool {
+    get
+    set
+  }
+  public var pushNotificationAvailable: Swift.Bool
+  public var pushNotificationEnabled: Swift.Bool {
+    get
+  }
+  public func initSDK(with config: ChangersSDK.ChangersConfig, uuid: ChangersSDK.UUID?, apn: Swift.Bool = false)
+  public func setup()
+  public func cleanState()
+  public func updateNotificationPermissions(enabled: Swift.Bool)
+  public func handleEvents(forBackgroundURLSession identifier: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  public func referralLink(_ str: Swift.String?) -> Swift.Bool
+  public func fetchNotificationCredentials()
+  public func fetchStatistic()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct ChangersNotificationCredentials : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension ChangersSDK.ChangersAuthenticateError : Swift.Equatable {}
+extension ChangersSDK.ChangersAuthenticateError : Swift.Hashable {}
+extension ChangersSDK.ChangersEnv : Swift.Equatable {}
+extension ChangersSDK.ChangersEnv : Swift.Hashable {}
+extension ChangersSDK.ChangersEnv : Swift.RawRepresentable {}
