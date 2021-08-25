@@ -33,17 +33,13 @@ typedef NS_ENUM(NSUInteger, MTDataTransferMode) {
 - (void)startWithToken:(nullable NSString*)token settings:(nullable NSDictionary*)settingsDict;
 - (void)stop;
 - (void)useWifiOnlyDataTransfer:(BOOL)on;
-- (void)checkIn;
-- (void)checkOut;
-- (void)registerCallback:(void (^_Nonnull)(void))completionHandler forIdentifier:(NSString *_Nonnull)identifier;
+- (void)handleEventsForBackgroundURLSession:(NSString* _Nonnull) identifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)clearDataWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
 
 @interface MotionTagCore : NSObject
-+ (NSObject<MotionTag>*_Nonnull)sharedInstanceWithToken:(nullable NSString*)token
-                                               settings:(nullable NSDictionary*)settingsDict
-                                             completion:(nullable void(^)(void))completion;
-
++ (NSObject<MotionTag>*_Nonnull)sharedInstanceWithSettings:(nullable NSDictionary*)settingsDict;
 -(void) setDelegate:(nullable id<MotionTagDelegate>)delegate;
 @end
 
