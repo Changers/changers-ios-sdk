@@ -26,6 +26,8 @@ To function properly the SDK requires the **'Always'** location permission and t
 
 ### CocoaPods
 
+/!\ THIS NEEDS TO BE UPDATED FOR NOW PLEASE IGNORE COCOAPODS AND USE MANUALLY INSTALL
+
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
@@ -34,10 +36,10 @@ To function properly the SDK requires the **'Always'** location permission and t
 
 ### Manually
 
-You can also drag and drop the Changers SDK [here](https://github.com/Changers/changers-ios-sdk/tree/master/ChangersSDK.framework) but we recommend using cocoapods to remain up to date.
+You can also drag and drop the Changers SDK [here](https://github.com/Changers/changers-ios-sdk/tree/master/ChangersSDK.xcframework)
 
 ```
-  Manually drag and drop `ChangersSDK.framework` to your project
+  Manually drag and drop `ChangersSDK.xcframework` to your project
 ```
 
 ### MotionTagSDK
