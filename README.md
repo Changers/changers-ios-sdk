@@ -57,14 +57,20 @@ You can also drag and drop the Changers SDK [here](https://github.com/Changers/c
 ```
 func initSDK(with config: ChangersConfig, uuid: UUID?)
 func cleanState()
-func setDelegate(_ delegate: ChangersDelegate?)
 func setup()
 ```
 
 ```
 public protocol ChangersDelegate: class {
-    func setupDidFinish(with uiid: String)
+    func setupDidFinish()
     func setupDidFail(with error: ChangersSDKError?)
+}
+
+```
+
+```
+public protocol ChangersAuthenticationDelegate: class {
+    func didUpdateCredentials(with uiid: String)
 }
 
 ```
@@ -97,13 +103,19 @@ Initialize the library using ```func initSDK(with config: ChangersConfig, uuid: 
 ```
 
 This needs to be done somewhere near the top of ```didFinishLaunchingWithOptions```. The reason is that the app may be started from the background by the system. By initializing the tracking library early, you guarantee that all location managers are set up to retreive new incoming locations.
-Since the SDK may need additional time to finalize its initialization (e.g. necessary data migrations that have to be run on startup) the `initSDK` call is asynchronous. The `setupDidFinish` or `setupDidFail` from the delegate `ChangersDelegate` will be called by the SDK once it is done with everything. Best usage will be to wait for `setupDidFinish` and change the state of the button which opens the webapp.
-`uuid` is optional on first init, we will register the device and provide you with one in the callback `setupDidFinish`
+Since the SDK may need additional time to finalize its initialization (e.g. necessary data migrations that have to be run on startup) the `initSDK` call is asynchronous. The `setupDidFinish` or `setupDidFail` from the delegate `ChangersDelegate` will be called by the SDK once it is done with everything. Best usage will be to wait for `setupDidFinish` before letting the user opening the changers interface.
 
-To receive callbacks, therefore the user uuid, set the appropriate delegate ```ChangersDelegate```:
+To receive receives callback, therefore get to know when SDK is ready, set the appropriate delegate ```ChangersDelegate```:
+
+        changers.delegate = self
+
+`uuid` is optional on first init, we will register the device and provide you with one in the callback `func didUpdateCredentials(with uiid: String)`, note that this `didUpdateCredentials` will always be call on app opening, you should check if the UUID has changed and replace it, your business logic can also follow based on that.
+
+
+To receive callbacks, therefore the user uuid, set the appropriate delegate ```ChangersAuthenticationDelegate```:
 
 ```
-	changers.delegate = self
+        changers.authenticationDelegate = self
 ```
  
 
@@ -118,23 +130,14 @@ if `Changers.isReady == false` we will need to call `changers.setup()` and wait 
 The reason is that the app may need additional time to finalize its initial (e.g. necessary data migrations, or API calls in order to init the user with the Changers Back end, if it's not ready it's mostly due to API request timeout, the init happens once to register the user with the Changers Backend or to log the user in )
 
 
-Reset the SDK in order to log an user in with existing credentials. If you do not provide credentials to the SDK on loading it will register a new user. If you need to login an user after the SDK has been loaded, then `cleanState()` is required before calling `changers.initSDK(with: changersConfig with: changersUUID)` again.
+Reset the SDK in order to clear the user credentials and log a new user, do that if you change user within your app and want the user to retrieve his data. If you do not provide credentials to the SDK on loading it will register a new user. If you need to login an user after the SDK has been loaded, then `cleanState()` is required before calling `changers.initSDK(with: changersConfig with: changersUUID)` again.
 
 ```
 	func cleanState()
 ```
 
-## 5. Callbacks
+## 5. Errors
 
-### Optional
-
-```setupDidFinish(with uiid: String)```
-
-- if the SDK is initialized properly and ready, the method `setupDidFinish` will be triggered and you will receive the `uiid` which belong to this user. You need to save it along with the user profil and provide it to the SDK:
-
-```setupDidFail(with error: ChangersSDKError?)```
-
-- if the SDK fails to initialized, `setupDidFail()` will be triggered with one of the following errors: 
 
 ```
 enum ChangersSDKError: Error {
