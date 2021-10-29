@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		N9v+82ExrYc0vDVnnBZAQvU69GU=
+		mvrM3HN815+3zRqNLypwOxmRcxE=
 		</data>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<data>
-		Ui6CLzeTzcM6mqK575jX10vxoe8=
+		DrOg3DHWS4USb85aCel935+Ea3o=
 		</data>
 		<key>Headers/changers_sdk.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		umsAl20mc6LFB7R+BOWHmF89fsc=
+		qeaNQe6/JsGCE3hKJtpyK9Icg7Y=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3lWQzlv4HjDFIV6e8wJXa4clVcU=
+		D90j5z7Vgr3U9t2ortKxudWadLs=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		H2o5aZfxTBHePlMPkwzMw/0vjyw=
+		EVglE5L5Nqucq+oGadpI9x5oYpc=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		woP3SOtx75WaZWKtdjQd8KRslss=
+		qkkkf8QHXDY499k3Zq7eZwoEVQs=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		3lWQzlv4HjDFIV6e8wJXa4clVcU=
+		D90j5z7Vgr3U9t2ortKxudWadLs=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		H2o5aZfxTBHePlMPkwzMw/0vjyw=
+		EVglE5L5Nqucq+oGadpI9x5oYpc=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		woP3SOtx75WaZWKtdjQd8KRslss=
+		qkkkf8QHXDY499k3Zq7eZwoEVQs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ScannerViewController.nib</key>
 		<data>
-		eYRB8QMfDp6Ooj8U4S8m9HTQuXQ=
+		TOiGnrcvGFpwvo9v7t21ezjJHh0=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hqfryt+dDQNDmmqXlQR0X0Gcmit//LSJfp8Vij6emYU=
+			8TOLWXaBTBn3EW3cR9IdTEofp8CBuix2gHp/inZo1Aw=
 			</data>
 		</dict>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHmX9GaZaTLeDrt1Hv26OtGXPFxL4PhULJsO8t8tzAM=
+			4nsfnYGfE+3eqwPNVNYNKNNAjXD+ZTGvtjGcRWT2ofo=
 			</data>
 		</dict>
 		<key>Headers/changers_sdk.h</key>
@@ -107,42 +107,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2VCcICQ4C6T/RGzAeAyXrEp0wngy7vNVYKlcTsJPZAc=
+			FazcAwQHbnU1rhUqPiBXu1gkFNhVdrKgi2s/I8yjt6s=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkbUqKdmPTg/uLRqsu43btpNnDQ7BWSWWR5apQNldwI=
+			/GbotFzW9UAJx56ADgAt8rEmmyS+QlQM5KgDTs9Kcdw=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tNyBMspdxHEEDKSX/B3Nau/FxMEJg0jMtWeD2RYlLNY=
+			5mKZw7Hpe18OA7pBOJbY8H2BQWGTk2IbuIpeVbz1vbM=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2VCcICQ4C6T/RGzAeAyXrEp0wngy7vNVYKlcTsJPZAc=
+			FazcAwQHbnU1rhUqPiBXu1gkFNhVdrKgi2s/I8yjt6s=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkbUqKdmPTg/uLRqsu43btpNnDQ7BWSWWR5apQNldwI=
+			/GbotFzW9UAJx56ADgAt8rEmmyS+QlQM5KgDTs9Kcdw=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tNyBMspdxHEEDKSX/B3Nau/FxMEJg0jMtWeD2RYlLNY=
+			5mKZw7Hpe18OA7pBOJbY8H2BQWGTk2IbuIpeVbz1vbM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -156,7 +156,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yPA9GTMJvWkG8ndVwORkiKuBmohfh1sVvYx1Fb+jPPI=
+			2ISsmaFhXc8W4zY5Xj/GXtG/S3k40dErm0JsemK1S8k=
 			</data>
 		</dict>
 		<key>de.lproj/Localizable.strings</key>

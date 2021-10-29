@@ -12,35 +12,22 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-#define kMTDataTransferMode @"kMTDataTransferMode"
-#define kMTBatterySavingsMode @"kMTBatterySavingsMode"
-#define kMTSendingMode @"kMTSendingMode"
-
-typedef NS_ENUM(NSUInteger, MTDataTransferMode) {
-    kDataTransferModeWifiOnly NS_SWIFT_NAME(wifiOnly),
-    kDataTransferMode3G NS_SWIFT_NAME(wifiAnd3G)
-}NS_SWIFT_NAME(DataTransferMode);
-
-
 @protocol MotionTagDelegate;
 
 @protocol MotionTag
-@property (nonatomic, readonly) BOOL isTrackingActive;
-@property (nonatomic, strong, readonly) NSNumber * _Nonnull trackingActiveAsInt;
 @property (nonatomic, weak) id <MotionTagDelegate> _Nullable delegate;
-
-- (void)startWithToken:(nullable NSString*)token;
-- (void)startWithToken:(nullable NSString*)token settings:(nullable NSDictionary*)settingsDict;
+@property (nonatomic, readonly) BOOL isTrackingActive;
+@property (nonatomic, strong) NSString * _Nonnull userToken;
+@property (nonatomic, assign) BOOL wifiOnlyDataTransfer;
+- (void)start;
 - (void)stop;
-- (void)useWifiOnlyDataTransfer:(BOOL)on;
 - (void)handleEventsForBackgroundURLSession:(NSString* _Nonnull) identifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)clearDataWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
 
 @interface MotionTagCore : NSObject
-+ (NSObject<MotionTag>*_Nonnull)sharedInstanceWithSettings:(nullable NSDictionary*)settingsDict;
--(void) setDelegate:(nullable id<MotionTagDelegate>)delegate;
+@property (class, readonly) NSObject<MotionTag>* _Nonnull sharedInstance;
 @end
 
 @protocol MotionTagDelegate <NSObject>
@@ -49,7 +36,7 @@ typedef NS_ENUM(NSUInteger, MTDataTransferMode) {
 - (void)locationAuthorizationStatusDidChange:(CLAuthorizationStatus)status precise:(BOOL)precise;
 - (void)motionActivityAuthorized:(BOOL)authorized;
 - (void)didTrackLocation:(nonnull CLLocation*)location;
-- (void)didTransmitData:(nonnull NSDate*)transmissionTimestamp lastEventTimestamp:(nonnull NSDate*)lastEventTimestamp;
+- (void)dataUploadWithTrackedFrom:(nonnull NSDate*)startDate to:(nonnull NSDate*)endDate didCompleteWithError:(nullable NSError*)error;
 @end
 
 #endif /* MotionTag_h */
