@@ -151,5 +151,5 @@ enum ChangersSDKError: Error {
 
 ## 7. Example
 
-Checkout the "SDKSample" folder   for an example application.
+Checkout the "SDKSample" folder for an example application.
 
