@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChangersSDK
 import AVFoundation
 import CoreLocation
@@ -14,6 +14,7 @@ import StoreKit
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 public enum ChangersAuthenticateError : Swift.Error {
   case unknownError
   case connectionError
@@ -59,7 +60,7 @@ public struct ChangersStatistic : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-extension ChangersAuthenticateError : Foundation.LocalizedError {
+extension ChangersSDK.ChangersAuthenticateError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
