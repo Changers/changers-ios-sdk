@@ -26,7 +26,7 @@ To function properly the SDK requires the **'Always'** location permission and t
 
 ### CocoaPods
 
-/!\ THIS NEEDS TO BE UPDATED FOR NOW PLEASE IGNORE COCOAPODS AND USE MANUALLY INSTALL
+⚠️ THIS NEEDS TO BE UPDATED FOR NOW PLEASE IGNORE COCOAPODS AND USE MANUALLY INSTALL ⚠️
 
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
