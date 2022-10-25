@@ -68,6 +68,7 @@ class ViewController: UIViewController {
     
     @IBAction func openWebApp() {
         let vc = ChangersInstance.shared().webApp()
+        ChangersInstance.shared().loadWebApp(on: <#T##UIViewController#>)
         self.present(vc, animated: true)
     }
     

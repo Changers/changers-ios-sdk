@@ -36,7 +36,7 @@ To function properly the SDK requires the **'Always'** location permission and t
 
 ### Manually
 
-You can also drag and drop the Changers SDK [here](https://github.com/Changers/changers-ios-sdk/tree/master/ChangersSDK.xcframework)
+You can also drag and drop the Changers SDK [here](https://github.com/Changers/changers-ios-sdk/tree/master/SDKSample/ChangersSDK.xcframework)
 
 ```
   Manually drag and drop `ChangersSDK.xcframework` to your project
@@ -44,7 +44,7 @@ You can also drag and drop the Changers SDK [here](https://github.com/Changers/c
 
 ### MotionTagSDK
 
-**MotionTagSDK** needs to be installed manually to your project. MotionTagSDK available [Here](https://github.com/Changers/changers-ios-sdk/tree/master/MotionTagSDK.xcframework)
+**MotionTagSDK** needs to be installed manually to your project. MotionTagSDK available [Here](https://github.com/Changers/changers-ios-sdk/tree/master/SDKSample/MotionTagSDK.xcframework)
 
 
 ```
@@ -52,91 +52,82 @@ You can also drag and drop the Changers SDK [here](https://github.com/Changers/c
 ```
 
   
-## 2. Interface 
+## 2. Interface from ChangersInstance singleton
 
 ```
-func initSDK(with config: ChangersConfig, uuid: UUID?)
-func cleanState()
-func setup()
+var isLoggedIn: Bool { get }
+func registerUser(authenticationDelegate: ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersDelegate? = nil)
+func loginUser(uuid: UUID, authenticationDelegate: ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersDelegate? = nil)
+func logoutUser()
+func load(config: ChangersConfig)
+func handleEvents(forBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void)
+func loadWebApp(on viewController: UIViewController, completion: (() -> Void)? = nil, dismissCompletion: (() -> Void)? = nil)
+func webApp(with dismissCompletion: (() -> Void)? = nil) -> UIViewController
 ```
+
 
 ```
 public protocol ChangersDelegate: class {
     func setupDidFinish()
-    func setupDidFail(with error: ChangersSDKError?)
+    func setupDidFail(with error: ChangersAuthenticateError?)
 }
-
 ```
 
 ```
 public protocol ChangersAuthenticationDelegate: class {
-    func didUpdateCredentials(with uiid: String)
-}
-
-```
-
-
-```
-static func loadWebApp(on viewController: UIViewController, completion: (() -> Void)? = nil)
-static var isReady: Bool { get }
-
-```
-
-```
-enum ChangersSDKError: Error {
-    case unknownError
-    case connectionError
-    case credentialsError
+    func didSetupUser(with uiid: String)
 }
 ```
 
 
 
-## 3. Setup
 
-Initialize the library using ```func initSDK(with config: ChangersConfig, uuid: UUID?)```:
+## 3. Implementation
 
-
+the following needs be done as soon as possible in the didFinishLauchingWithOptions
 ```
-    lazy var changers = Changers()
-    changers.initSDK(with: changersConfig with: changersUUID)
-```
-
-This needs to be done somewhere near the top of ```didFinishLaunchingWithOptions```. The reason is that the app may be started from the background by the system. By initializing the tracking library early, you guarantee that all location managers are set up to retreive new incoming locations.
-Since the SDK may need additional time to finalize its initialization (e.g. necessary data migrations that have to be run on startup) the `initSDK` call is asynchronous. The `setupDidFinish` or `setupDidFail` from the delegate `ChangersDelegate` will be called by the SDK once it is done with everything. Best usage will be to wait for `setupDidFinish` before letting the user opening the changers interface.
-
-To receive receives callback, therefore get to know when SDK is ready, set the appropriate delegate ```ChangersDelegate```:
-
-        changers.delegate = self
-
-`uuid` is optional on first init, we will register the device and provide you with one in the callback `func didUpdateCredentials(with uiid: String)`, note that this `didUpdateCredentials` will always be call on app opening, you should check if the UUID has changed and replace it, your business logic can also follow based on that.
-
-
-To receive callbacks, therefore the user uuid, set the appropriate delegate ```ChangersAuthenticationDelegate```:
-
-```
-        changers.authenticationDelegate = self
-```
- 
-
-To open the webapp, make sure the ChangersSDK is `Changers.isReady`, if yes then just call the ```static func loadWebApp(on viewController: UIViewController, completion: (() -> Void)? = nil)``` method:
-
-```
-         Changers.loadWebApp(on: self)
+_ = ChangersTracking.sharedInstance
+ChangersInstance.shared().load(config: ChangersHelper.config)
 ```
 
-if `Changers.isReady == false` we will need to call `changers.setup()` and wait for the callback from `ChangersDelegate`.
-
-The reason is that the app may need additional time to finalize its initial (e.g. necessary data migrations, or API calls in order to init the user with the Changers Back end, if it's not ready it's mostly due to API request timeout, the init happens once to register the user with the Changers Backend or to log the user in )
-
-
-Reset the SDK in order to clear the user credentials and log a new user, do that if you change user within your app and want the user to retrieve his data. If you do not provide credentials to the SDK on loading it will register a new user. If you need to login an user after the SDK has been loaded, then `cleanState()` is required before calling `changers.initSDK(with: changersConfig with: changersUUID)` again.
-
+Must be called from the handleEventsForBackgroundURLSession method of the UIApplicationDelegate.
 ```
-	func cleanState()
+func handleEvents(forBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void)
 ```
 
-## 5. Errors
+
+To check if an user is already logged in
+```
+var isLoggedIn: Bool { get }
+```
+
+If you want to register a new user, or log an user in, you must first logout an user if already logged in
+```
+func logoutUser()
+```
+
+To register a user
+```
+func registerUser(authenticationDelegate: ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersDelegate? = nil)
+```
+
+To log a user in
+```
+func loginUser(uuid: UUID, authenticationDelegate: ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersDelegate? = nil)
+```
+
+You can either get the viewController and embeed it wherere you want
+```
+func webApp(with dismissCompletion: (() -> Void)? = nil) -> UIViewController
+```
+
+You can load the viewController from a viewController
+```
+func loadWebApp(on viewController: UIViewController, completion: (() -> Void)? = nil, dismissCompletion: (() -> Void)? = nil)
+```
+
+
+## 4. Errors
 
 
 ```

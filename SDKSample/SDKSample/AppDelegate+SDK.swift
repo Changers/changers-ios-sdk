@@ -46,7 +46,6 @@ extension AppDelegate {
     
     fileprivate func handleChangersSDK() {
         _ = ChangersTracking.sharedInstance
-        ChangersInstance.shared().debug = true
         ChangersInstance.shared().load(config: ChangersHelper.config)
     }
         
