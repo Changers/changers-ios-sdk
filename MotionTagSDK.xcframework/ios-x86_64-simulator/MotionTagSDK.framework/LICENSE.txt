@@ -1,1 +1,0 @@
-The SDK is licensed under the MOTIONTAG SDK Test License: https://api.motion-tag.de/developer/sdk_test_license
