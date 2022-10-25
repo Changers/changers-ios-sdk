@@ -8,68 +8,90 @@
 import UIKit
 import ChangersSDK
 
-protocol SDKWrapperDelegate {
-    func ready()
-    func updateUUID()
-}
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var uuidTextField: UITextField!
+    
+    private var isChangersReady: Bool = false {
+        didSet {
+            print(isChangersReady ? "Changers is ready" : "Changers is not ready")
+        }
+    }
+    
+    private var changersUUID: String? {
+        didSet {
+            self.uuidTextField.text = changersUUID
+            print("changersUUID : \(changersUUID == nil ? "no changers UUID saved locally" : changersUUID!)")
+        }
+    }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.uuidTextField.placeholder = "Changers UUID"
+        self.changersUUID = ChangersHelper.changersUUID
+    }
+  
+    fileprivate func logoutUser() {
+        ChangersInstance.shared().logoutUser()
+        ChangersHelper.changersUUID = nil
+        changersUUID = nil
     }
     
-  
     @IBAction func logout() {
-        AppDelegate.shared().changers.cleanState()
+        if ChangersInstance.shared().isLoggedIn {
+            logoutUser()
+        }
         ChangersHelper.changersUUID = nil
-        AppDelegate.shared().changers.initSDK(with: ChangersHelper.config, uuid: nil)
     }
 
+    @IBAction func registerAsGuest(_ sender: Any) {
+        if ChangersInstance.shared().isLoggedIn {
+            logoutUser()
+        }
+        ChangersInstance.shared().registerUser(authenticationDelegate: self, setupDelegate: self)
+        ChangersHelper.changersUUID = nil
+    }
     
-    @IBAction func openWebApp() {   
-        guard AppDelegate.shared().changers.isReady else {
-            AppDelegate.shared().changers.cleanState()
-            AppDelegate.shared().changers.initSDK(with: ChangersHelper.config, uuid: ChangersHelper.changersUUID)
-            let alert = UIAlertController(title: "Changers SDK not ready", message: ChangersHelper.changersUUID != nil ? "We are authenticating your user with UUID : \(ChangersHelper.changersUUID!), just a moment." : "We are creating a guest user and you should be able to access to the web app, try in a moment", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"OK\" alert occured.")
-            }))
-            self.present(alert, animated: true)
+    @IBAction func login() {
+        guard let uuid = self.uuidTextField.text else {
+            print("uuid is missing in textfield")
             return
         }
-        let vc = Changers.webApp()
-//        vc.modalPresentationStyle = .fullScreen
+        if ChangersInstance.shared().isLoggedIn {
+            logoutUser()
+        }
+        ChangersInstance.shared().loginUser(uuid: uuid, authenticationDelegate: self, setupDelegate: self)
+    }
+    
+    
+    @IBAction func openWebApp() {
+        let vc = ChangersInstance.shared().webApp()
         self.present(vc, animated: true)
     }
     
-    
+}
+
+extension ViewController: ChangersAuthenticationDelegate {
+    func didSetupUser(with uiid: String) {
+        ChangersHelper.changersUUID = uiid // here you need to hold the user's changers uuid
+        uuidTextField.text = uiid
+    }
 }
 
 
-//extension ViewController: UITextFieldDelegate {
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        self.view.endEditing(true)
-//        guard let text = textField.text else {
-//            return true
-//        }
-//        ChangersHelper.changersUUID = text.isEmpty ? nil : text
-//        AppDelegate.shared().changers.cleanState()
-//        AppDelegate.shared().changers.initSDK(with: ChangersHelper.config, uuid: ChangersHelper.changersUUID)
-//        return true
-//    }
-//}
-
-extension ViewController: SDKWrapperDelegate {
-    
-    func ready() {
-        print("SDK is ready")
+extension ViewController: ChangersDelegate {
+    func setupDidFinish() {
+        // webapp is ready to be open safely, listen to this callback
+        self.isChangersReady = true
     }
     
-    func updateUUID() {
-        print("logged in with new uuid : \(ChangersHelper.changersUUID)")
+    func setupDidFail(with error: ChangersAuthenticateError?) {
+        // it has failed to autneticated properly
+        self.isChangersReady = false
     }
+    
     
 }
 
