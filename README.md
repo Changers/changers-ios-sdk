@@ -42,6 +42,8 @@ You can also drag and drop the Changers SDK [here](https://github.com/Changers/c
   Manually drag and drop `ChangersSDK.xcframework` to your project
 ```
 
+**Note**: to run on simulator you need to exclude arm64 architecture from the iOS Simulator
+
 ### MotionTagSDK
 
 **MotionTagSDK** needs to be installed manually to your project. MotionTagSDK available [Here](https://github.com/Changers/changers-ios-sdk/tree/master/SDKSample/MotionTagSDK.xcframework)
@@ -84,13 +86,16 @@ public protocol ChangersAuthenticationDelegate: class {
 
 ## 3. Implementation
 
-the following needs be done as soon as possible in the didFinishLauchingWithOptions
+the following needs be done as soon as possible within the didFinishLauchingWithOptions
 ```
 _ = ChangersTracking.sharedInstance
-ChangersInstance.shared().load(config: ChangersHelper.config)
+ChangersInstance.shared().load(config: ChangersConfig)
 ```
 
-Must be called from the handleEventsForBackgroundURLSession method of the UIApplicationDelegate.
+**note**: the clientId, clientName, clientSecret are environement based, and needs to be given by Changers. In the sample app you will find sandbox credentials for the ChangersEnv.stage environement.
+
+
+Must be called from the handleEventsForBackgroundURLSession method of the UIApplicationDelegate. It's accessible using the ChangersTracking sharedInstance
 ```
 func handleEvents(forBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void)
 ```
@@ -106,7 +111,7 @@ If you want to register a new user, or log an user in, you must first logout an 
 func logoutUser()
 ```
 
-To register a user
+To register an user as a guest.
 ```
 func registerUser(authenticationDelegate: ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersDelegate? = nil)
 ```
