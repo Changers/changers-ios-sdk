@@ -13,16 +13,16 @@ import UIKit
 struct ChangersHelper {
     
     static var clientSecret: String { // client secret provided by Changers, they are different between each env
-        return "NJenVMftfWMyr3T7XcxBRQSKgklm1berPgCz4WEB"
+        return "w14mkOzaFvFKnWGc0vQmCyC6QJSXoeGV7bAPlDKD"
     }
     
     
     static var clientId: Int { // client id provided by Changers, they are different between each env
-        return 3
+        return 2
     }
     
     static var clientName: String {
-        return "sdksample"
+        return "darmstadt"
     }
         
     static var config: ChangersConfig {
