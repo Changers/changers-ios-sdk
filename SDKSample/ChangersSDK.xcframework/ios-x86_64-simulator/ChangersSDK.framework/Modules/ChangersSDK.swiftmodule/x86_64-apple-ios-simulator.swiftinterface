@@ -117,7 +117,7 @@ public struct ChangersConfig {
   public init(clientId: Swift.Int, clientSecret: Swift.String, clientName: Swift.String, environment: ChangersSDK.ChangersEnv = .stage)
 }
 public typealias UUID = Swift.String
-@objc @_inheritsConvenienceInitializers public class ChangersInstance : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ChangersInstance : ObjectiveC.NSObject {
   public class func shared() -> ChangersSDK.ChangersInstance
   public var versionSDK: Swift.String {
     get
@@ -169,7 +169,6 @@ public typealias UUID = Swift.String
   public func fetchStatistic(delegate: ChangersSDK.ChangersStatisticDelegate? = nil)
   public func fetchEndiosConfig(delegate: ChangersSDK.ChangersEndiosDelegate? = nil)
   public func handleEvents(forBackgroundURLSession identifier: Swift.String, completionHandler: @escaping () -> Swift.Void)
-  @objc override dynamic public init()
   @objc deinit
 }
 public struct EndiosConfig : Swift.Codable {
