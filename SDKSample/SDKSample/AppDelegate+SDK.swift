@@ -45,7 +45,8 @@ struct ChangersHelper {
 extension AppDelegate {
     
     fileprivate func handleChangersSDK() {
-        _ = ChangersTracking.sharedInstance
+        let changersTracking = ChangersTracking.sharedInstance
+        changersTracking.initializeMotionTag(with: nil)
         ChangersInstance.shared().load(config: ChangersHelper.config)
     }
         

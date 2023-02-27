@@ -20,6 +20,6 @@ framework module MotionTagSDK {
 }
 
 module MotionTagSDK.Swift {
-    header "MotionTagSDK-Swift.h"
-    requires objc
+  header "MotionTagSDK-Swift.h"
+  requires objc
 }

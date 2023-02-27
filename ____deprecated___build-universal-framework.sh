@@ -2,7 +2,7 @@
 mkdir build
 
 # build framework for simulators
-xcodebuild clean build -project ~/Workspace/Changers-iOS-SDK/iOS-SDK/changers-sdk/changers-sdk.xcodeproj -scheme changers-sdk -destination "generic/platform=iOS Simulator" -derivedDataPath derived_data SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+xcodebuild clean build -project ~/Documents/Changers/Changers-iOS-SDK/iOS-SDK/changers-sdk/changers-sdk.xcodeproj -scheme changers-sdk -destination "generic/platform=iOS Simulator" -derivedDataPath derived_data SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 # create folder to store compiled framework for simulator
 mkdir ~/Workspace/Changers-iOS-SDK/SDK/changers-ios-sdk/build/simulator

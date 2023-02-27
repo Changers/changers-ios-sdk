@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188FD14929A4CE9100F5F8F3 /* ChangersSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */; };
+		188FD14A29A4CE9100F5F8F3 /* ChangersSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		188FD14C29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD14B29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework */; };
 		E457E03A290826E3004C3CDB /* AppDelegate+SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E457E039290826E3004C3CDB /* AppDelegate+SDK.swift */; };
-		E457E03F29082BFE004C3CDB /* ChangersSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E457E03B29082932004C3CDB /* ChangersSDK.xcframework */; };
-		E457E04029082BFE004C3CDB /* ChangersSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E457E03B29082932004C3CDB /* ChangersSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E457E04129082BFF004C3CDB /* MotionTagSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E457E03C29082932004C3CDB /* MotionTagSDK.xcframework */; };
-		E457E04229082BFF004C3CDB /* MotionTagSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E457E03C29082932004C3CDB /* MotionTagSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E48ACF172654FBFC000E77B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ACF162654FBFC000E77B4 /* AppDelegate.swift */; };
 		E48ACF1B2654FBFC000E77B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ACF1A2654FBFC000E77B4 /* ViewController.swift */; };
 		E48ACF1E2654FBFC000E77B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48ACF1C2654FBFC000E77B4 /* Main.storyboard */; };
@@ -26,8 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E457E04029082BFE004C3CDB /* ChangersSDK.xcframework in Embed Frameworks */,
-				E457E04229082BFF004C3CDB /* MotionTagSDK.xcframework in Embed Frameworks */,
+				188FD14A29A4CE9100F5F8F3 /* ChangersSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,9 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChangersSDK.xcframework; path = "../../iOS-SDK/changers-sdk/ChangersSDK.xcframework"; sourceTree = "<group>"; };
+		188FD14B29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MotionTagSDK.xcframework; sourceTree = "<group>"; };
 		E457E039290826E3004C3CDB /* AppDelegate+SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SDK.swift"; sourceTree = "<group>"; };
-		E457E03B29082932004C3CDB /* ChangersSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ChangersSDK.xcframework; sourceTree = "<group>"; };
-		E457E03C29082932004C3CDB /* MotionTagSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MotionTagSDK.xcframework; sourceTree = "<group>"; };
 		E48ACF132654FBFC000E77B4 /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48ACF162654FBFC000E77B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48ACF1A2654FBFC000E77B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E457E03F29082BFE004C3CDB /* ChangersSDK.xcframework in Frameworks */,
-				E457E04129082BFF004C3CDB /* MotionTagSDK.xcframework in Frameworks */,
+				188FD14929A4CE9100F5F8F3 /* ChangersSDK.xcframework in Frameworks */,
+				188FD14C29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +92,8 @@
 		E48ACF2A2654FC39000E77B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E457E03B29082932004C3CDB /* ChangersSDK.xcframework */,
-				E457E03C29082932004C3CDB /* MotionTagSDK.xcframework */,
+				188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */,
+				188FD14B29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,6 +323,7 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = SDKSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SDK Tester";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +331,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacksquared.SDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -347,6 +349,7 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = SDKSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SDK Tester";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,6 +357,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacksquared.SDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

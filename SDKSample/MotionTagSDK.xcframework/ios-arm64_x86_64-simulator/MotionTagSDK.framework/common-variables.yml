@@ -1,0 +1,6 @@
+# Common variables
+
+variables:
+  - group: iOS
+  - name: vmImage
+    value: 'macos-12'
