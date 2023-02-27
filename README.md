@@ -7,8 +7,9 @@
 	+ "Privacy - Location Always & When in Use Description" string // e.g: For the automatic measurement of distances we need the option "Always Allow"
 	+ "Privacy - When in Use Description" string // e.g: For the automatic measurement of distances we need the option "Allow While Using App".
 	+ "Privacy - Motion Usage Description" string // e.g: For the automatic tracking measurement we need the access of the Motion Activity
+	+"Privacy - Camera Usage Description" string // e.g: The use of the camera allows you to redeem Climate Coins and to take part in climate measures.
 
-+ minimum deployment target 11.0
++ minimum deployment target 13.0
 
 ## Authorizations
 The SDK requires two authorizations:  
@@ -88,11 +89,14 @@ public protocol ChangersAuthenticationDelegate: class {
 
 the following needs be done as soon as possible within the didFinishLauchingWithOptions
 ```
-_ = ChangersTracking.sharedInstance
+let changersTracking = ChangersTracking.sharedInstance
+changersTracking.initializeMotionTag(with: launchOptions)
 ChangersInstance.shared().load(config: ChangersConfig)
 ```
 
 **note**: the clientId, clientName, clientSecret are environement based, and needs to be given by Changers. In the sample app you will find sandbox credentials for the ChangersEnv.stage environement.
+
+To switch between staging and production environments use the `ChangersEnv` enum with the desired value when creating the config
 
 
 Must be called from the handleEventsForBackgroundURLSession method of the UIApplicationDelegate. It's accessible using the ChangersTracking sharedInstance
