@@ -25,16 +25,6 @@ To function properly the SDK requires the **'Always'** location permission and t
 
 ## 1. Installation
 
-### CocoaPods
-
-⚠️ THIS NEEDS TO BE UPDATED FOR NOW PLEASE IGNORE COCOAPODS AND USE MANUALLY INSTALL ⚠️
-
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
- pod "changers-ios-sdk", :git => 'https://github.com/Changers/changers-ios-sdk.git'
-```
-
 ### Manually
 
 You can also drag and drop the Changers SDK [here](https://github.com/Changers/changers-ios-sdk/tree/master/SDKSample/ChangersSDK.xcframework)
