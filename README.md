@@ -84,6 +84,16 @@ changersTracking.initializeMotionTag(with: launchOptions)
 ChangersInstance.shared().load(config: ChangersConfig)
 ```
 
+ChangersConfig is initialized with 4 arguments
+```
+///  this is needed in order to setup the SDK ⚠️ You cannot override an app which has a different environement set, make sure to uninstall > install
+clientId: clientSecret provided by Changers, they are different between environment ( stage, prod, dev )
+clientSecret: clientSecret provided by Changers, they are different between environment ( stage, prod, dev )
+clientName:  clientName provided by Changers, they are different between environment ( stage, prod, dev )
+environment: ChangersEnv.stage, ChangersEnv.production or ChangersEnv.developemtn. default  is .stage
+  
+public init(clientId: Int, clientSecret: String, clientName: String, environment: ChangersEnv = .stage)
+```
 **note**: the clientId, clientName, clientSecret are environement based, and needs to be given by Changers. In the sample app you will find sandbox credentials for the ChangersEnv.stage environement.
 
 To switch between staging and production environments use the `ChangersEnv` enum with the desired value when creating the config
