@@ -7,8 +7,9 @@
 	+ "Privacy - Location Always & When in Use Description" string // e.g: For the automatic measurement of distances we need the option "Always Allow"
 	+ "Privacy - When in Use Description" string // e.g: For the automatic measurement of distances we need the option "Allow While Using App".
 	+ "Privacy - Motion Usage Description" string // e.g: For the automatic tracking measurement we need the access of the Motion Activity
+	+"Privacy - Camera Usage Description" string // e.g: The use of the camera allows you to redeem Climate Coins and to take part in climate measures.
 
-+ minimum deployment target 11.0
++ minimum deployment target 13.0
 
 ## Authorizations
 The SDK requires two authorizations:  
@@ -23,16 +24,6 @@ To function properly the SDK requires the **'Always'** location permission and t
 
 
 ## 1. Installation
-
-### CocoaPods
-
-⚠️ THIS NEEDS TO BE UPDATED FOR NOW PLEASE IGNORE COCOAPODS AND USE MANUALLY INSTALL ⚠️
-
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
- pod "changers-ios-sdk", :git => 'https://github.com/Changers/changers-ios-sdk.git'
-```
 
 ### Manually
 
@@ -88,11 +79,24 @@ public protocol ChangersAuthenticationDelegate: class {
 
 the following needs be done as soon as possible within the didFinishLauchingWithOptions
 ```
-_ = ChangersTracking.sharedInstance
+let changersTracking = ChangersTracking.sharedInstance
+changersTracking.initializeMotionTag(with: launchOptions)
 ChangersInstance.shared().load(config: ChangersConfig)
 ```
 
+ChangersConfig is initialized with 4 arguments
+```
+///  this is needed in order to setup the SDK ⚠️ You cannot override an app which has a different environement set, make sure to uninstall > install
+clientId: clientSecret provided by Changers, they are different between environment ( stage, prod, dev )
+clientSecret: clientSecret provided by Changers, they are different between environment ( stage, prod, dev )
+clientName:  clientName provided by Changers, they are different between environment ( stage, prod, dev )
+environment: ChangersEnv.stage, ChangersEnv.production or ChangersEnv.developemtn. default  is .stage
+  
+public init(clientId: Int, clientSecret: String, clientName: String, environment: ChangersEnv = .stage)
+```
 **note**: the clientId, clientName, clientSecret are environement based, and needs to be given by Changers. In the sample app you will find sandbox credentials for the ChangersEnv.stage environement.
+
+To switch between staging and production environments use the `ChangersEnv` enum with the desired value when creating the config
 
 
 Must be called from the handleEventsForBackgroundURLSession method of the UIApplicationDelegate. It's accessible using the ChangersTracking sharedInstance
