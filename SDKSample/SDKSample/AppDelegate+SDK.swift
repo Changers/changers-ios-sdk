@@ -13,16 +13,16 @@ import UIKit
 struct ChangersHelper {
     
     static var clientSecret: String { // client secret provided by Changers, they are different between each env
-        return "w14mkOzaFvFKnWGc0vQmCyC6QJSXoeGV7bAPlDKD"
+        return "<CLIENT_SECRET>"
     }
     
     
     static var clientId: Int { // client id provided by Changers, they are different between each env
-        return 2
+        return 0
     }
     
     static var clientName: String {
-        return "darmstadt"
+        return "<CLIENT_NAME"
     }
         
     static var config: ChangersConfig {
@@ -46,6 +46,8 @@ extension AppDelegate {
     
     fileprivate func handleChangersSDK() {
         let changersTracking = ChangersTracking.sharedInstance
+        ChangersInstance.shared().maxDebug = true
+        ChangersInstance.shared().isWebViewLogsEnabled = true
         changersTracking.initializeMotionTag(with: nil)
         ChangersInstance.shared().load(config: ChangersHelper.config)
     }
