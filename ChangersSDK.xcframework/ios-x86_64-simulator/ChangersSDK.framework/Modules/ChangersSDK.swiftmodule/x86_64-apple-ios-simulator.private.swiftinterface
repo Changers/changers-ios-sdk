@@ -1,0 +1,219 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChangersSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreLocation
+import CoreMotion
+import Foundation
+import MapKit
+import MessageUI
+import MotionTagSDK
+import SafariServices
+import Social
+import StoreKit
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+public enum ChangersAuthenticateError : Swift.Error {
+  case unknownError
+  case connectionError
+  case credentialsError
+  case authenticateError
+  case configError
+  case DataIsNil
+  case BadJSONResponse
+  public static func == (a: ChangersSDK.ChangersAuthenticateError, b: ChangersSDK.ChangersAuthenticateError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ChangersStatistic : Swift.Codable {
+  public let user: ChangersSDK.ChangersStatistic.StatisticUser
+  public let organisation: ChangersSDK.ChangersStatistic.StatisticGlobal
+  public let charity: ChangersSDK.ChangersStatistic.Charity?
+  public struct Charity : Swift.Codable {
+    public var userTreesPlanted: Swift.Int {
+      get
+    }
+    public var totalTreesPlanted: Swift.Int {
+      get
+    }
+    public var unitLeftToNextTree: Swift.Double {
+      get
+    }
+    public var totalTreePlanted: Swift.Int {
+      get
+    }
+    public var costPerTree: Swift.Int {
+      get
+    }
+    public var goal: Swift.Int {
+      get
+    }
+    public var goalReached: Swift.Bool {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct StatisticGlobal : Swift.Codable {
+    public let walkingDistance: Swift.Double
+    public let cyclingDistance: Swift.Double
+    public let co2Avoided: Swift.Double
+    public let coins: Swift.Double
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct StatisticUser : Swift.Codable {
+    public let walkingDistance: Swift.Double
+    public let cyclingDistance: Swift.Double
+    public let co2Avoided: Swift.Double
+    public let coins: Swift.Double
+    public let co2ForNextCoin: Swift.Double?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension ChangersSDK.ChangersAuthenticateError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol ChangersAuthenticationDelegate : AnyObject {
+  func didSetupUser(with uiid: Swift.String)
+}
+public protocol ChangersDelegate : AnyObject {
+  func setupDidFinish()
+  func setupDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+}
+public protocol ChangersStatisticDelegate : AnyObject {
+  func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic)
+}
+public protocol ChangersEndiosDelegate : AnyObject {
+  func fetchEndiosConfigDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func fetchEndiosConfigDidSuccess(with endiosConfig: ChangersSDK.EndiosConfig)
+}
+public protocol ChangersNotificationDelegate : AnyObject {
+  func notificationCredentialsDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  func notificationCredentialsDidSuccess(with notificationIdentifier: Swift.String, userId: Swift.String, header: [Swift.String : Swift.String])
+  func notification(enabled: Swift.Bool)
+}
+public enum ChangersEnv : Swift.String {
+  case stage
+  case production
+  case development
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ChangersConfig {
+  public init(clientId: Swift.Int, clientSecret: Swift.String, clientName: Swift.String, environment: ChangersSDK.ChangersEnv = .stage)
+}
+public typealias UUID = Swift.String
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ChangersInstance : ObjectiveC.NSObject {
+  public class func shared() -> ChangersSDK.ChangersInstance
+  public var versionSDK: Swift.String {
+    get
+  }
+  weak public var authenticationDelegate: ChangersSDK.ChangersAuthenticationDelegate?
+  weak public var setupDelegate: ChangersSDK.ChangersDelegate?
+  weak public var statisticDelegate: ChangersSDK.ChangersStatisticDelegate?
+  weak public var notificationDelegate: ChangersSDK.ChangersNotificationDelegate?
+  weak public var changersEndiosDelegate: ChangersSDK.ChangersEndiosDelegate?
+  public var isLoggedIn: Swift.Bool {
+    get
+  }
+  public var hasAccessToken: Swift.Bool {
+    get
+  }
+  public func loadWebApp(on viewController: UIKit.UIViewController, page: ChangersSDK.ChangersPageEnum = ChangersPageEnum.main, completion: (() -> Swift.Void)? = nil, dismissCompletion: (() -> Swift.Void)? = nil)
+  public func webApp(at page: ChangersSDK.ChangersPageEnum = ChangersPageEnum.main, with dismissCompletion: (() -> Swift.Void)? = nil) -> UIKit.UIViewController
+  public var endiosConfig: ChangersSDK.EndiosConfig? {
+    get
+  }
+  public var changersStatistic: ChangersSDK.ChangersStatistic? {
+    get
+  }
+  public var userUUID: Swift.String? {
+    get
+  }
+  public var debug: Swift.Bool {
+    get
+    set
+  }
+  public var maxDebug: Swift.Bool {
+    get
+    set
+  }
+  public var pushNotificationAvailable: Swift.Bool
+  public var pushNotificationEnabled: Swift.Bool {
+    get
+  }
+  public func stopTracking()
+  public func clearTrackingData()
+  public func load(config: ChangersSDK.ChangersConfig, apn: Swift.Bool = false, appName: Swift.String? = nil)
+  public func registerUser(authenticationDelegate: ChangersSDK.ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersSDK.ChangersDelegate? = nil)
+  public func loginUser(uuid: ChangersSDK.UUID, authenticationDelegate: ChangersSDK.ChangersAuthenticationDelegate? = nil, setupDelegate: ChangersSDK.ChangersDelegate? = nil)
+  public func setup(authenticationDelegate: ChangersSDK.ChangersAuthenticationDelegate? = nil)
+  public func logoutUser()
+  public func updateNotificationPermissions(enabled: Swift.Bool)
+  public func referralLink(_ str: Swift.String?) -> Swift.Bool
+  public func fetchNotificationCredentials()
+  public func fetchStatistic(delegate: ChangersSDK.ChangersStatisticDelegate? = nil)
+  public func fetchEndiosConfig(delegate: ChangersSDK.ChangersEndiosDelegate? = nil)
+  public func handleEvents(forBackgroundURLSession identifier: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+public struct EndiosConfig : Swift.Codable {
+  public var pluralCoinName: Swift.String {
+    get
+  }
+  public var singularCoinName: Swift.String {
+    get
+  }
+  public func imageURLForStatistic(_ statistic: ChangersSDK.ChangersStatistic?) -> Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ChangersNotificationCredentials : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class ChangersTracking : ObjectiveC.NSObject {
+  public static var sharedInstance: ChangersSDK.ChangersTracking
+  public func initializeMotionTag(with launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  public func handleEvents(forBackgroundURLSession identifier: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ChangersSDK.ChangersTracking : MotionTagSDK.MotionTagDelegate {
+  @objc dynamic public func didTrackLocation(_ location: CoreLocation.CLLocation)
+  @objc dynamic public func dataUploadWithTracked(from startDate: Foundation.Date, to endDate: Foundation.Date, didCompleteWithError error: Swift.Error?)
+  @objc dynamic public func trackingStatusChanged(_ isTracking: Swift.Bool)
+  @objc dynamic public func locationAuthorizationStatusDidChange(_ status: CoreLocation.CLAuthorizationStatus, precise: Swift.Bool)
+}
+public enum ChangersPageEnum {
+  case main
+  case marketplace
+  public static func == (a: ChangersSDK.ChangersPageEnum, b: ChangersSDK.ChangersPageEnum) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ChangersSDK.ChangersAuthenticateError : Swift.Equatable {}
+extension ChangersSDK.ChangersAuthenticateError : Swift.Hashable {}
+extension ChangersSDK.ChangersEnv : Swift.Equatable {}
+extension ChangersSDK.ChangersEnv : Swift.Hashable {}
+extension ChangersSDK.ChangersEnv : Swift.RawRepresentable {}
+extension ChangersSDK.ChangersPageEnum : Swift.Equatable {}
+extension ChangersSDK.ChangersPageEnum : Swift.Hashable {}

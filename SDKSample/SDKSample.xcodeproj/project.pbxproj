@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		188FD14929A4CE9100F5F8F3 /* ChangersSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */; };
-		188FD14A29A4CE9100F5F8F3 /* ChangersSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1881E94029F7FB8D00475523 /* ChangersSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881E93E29F7FB8800475523 /* ChangersSDK.xcframework */; };
+		1881E94129F7FB8D00475523 /* ChangersSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1881E93E29F7FB8800475523 /* ChangersSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		188FD14C29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188FD14B29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework */; };
 		E457E03A290826E3004C3CDB /* AppDelegate+SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E457E039290826E3004C3CDB /* AppDelegate+SDK.swift */; };
 		E48ACF172654FBFC000E77B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ACF162654FBFC000E77B4 /* AppDelegate.swift */; };
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				188FD14A29A4CE9100F5F8F3 /* ChangersSDK.xcframework in Embed Frameworks */,
+				1881E94129F7FB8D00475523 /* ChangersSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChangersSDK.xcframework; path = "../../iOS-SDK/changers-sdk/ChangersSDK.xcframework"; sourceTree = "<group>"; };
+		1881E93E29F7FB8800475523 /* ChangersSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ChangersSDK.xcframework; sourceTree = "<group>"; };
 		188FD14B29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MotionTagSDK.xcframework; sourceTree = "<group>"; };
 		E457E039290826E3004C3CDB /* AppDelegate+SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+SDK.swift"; sourceTree = "<group>"; };
 		E48ACF132654FBFC000E77B4 /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188FD14929A4CE9100F5F8F3 /* ChangersSDK.xcframework in Frameworks */,
 				188FD14C29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework in Frameworks */,
+				1881E94029F7FB8D00475523 /* ChangersSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 		E48ACF2A2654FC39000E77B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				188FD14729A4CE8A00F5F8F3 /* ChangersSDK.xcframework */,
+				1881E93E29F7FB8800475523 /* ChangersSDK.xcframework */,
 				188FD14B29A4CF2D00F5F8F3 /* MotionTagSDK.xcframework */,
 			);
 			name = Frameworks;
