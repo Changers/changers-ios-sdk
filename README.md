@@ -148,8 +148,35 @@ enum ChangersSDKError: Error {
 }
 ```
 
+## 5. Universal links
+We use universal links to show the offer after scanning a QR code
 
-## 7. Example
+To enable universal links you will have to provide us with your apple team ID & bundle ID so we can update our `apple-app-site-association` file on the server.
+
+Then you will have to enable assosiated domain in your project to do that head to project settings > signing & capabilities > tap + icon > associated domains.
+
+Add the following for production: `applinks:api.klima-taler.com/qrcodes/*` 
+and for staging: `applinks:api.coin-stage.de/qrcodes/*` 
+
+To handle when the app is opened with a universal link you will have to implement the following
+
+```
+func application(_ application: UIApplication,
+                 continue userActivity: NSUserActivity,
+                 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+
+    guard let incomingURL = userActivity.webpageURL else {
+        return false
+    }
+
+    ChangersInstance.shared().scannedQrCode(with: incomingURL.absoluteString)
+    return true
+
+}
+```
+This way we detect the url and pass it to the SDK to handle it accordingly
+
+## 6. Example
 
 Checkout the "SDKSample" folder for an example application.
 
