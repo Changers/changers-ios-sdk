@@ -47,6 +47,9 @@ public typealias UUID = Swift.String
   }
   public func loadWebApp(on viewController: UIKit.UIViewController, page: ChangersSDK.ChangersPageEnum = ChangersPageEnum.main, completion: (() -> Swift.Void)? = nil, dismissCompletion: (() -> Swift.Void)? = nil)
   public func webApp(at page: ChangersSDK.ChangersPageEnum = ChangersPageEnum.main, with dismissCompletion: (() -> Swift.Void)? = nil) -> UIKit.UIViewController
+  public var motionTagUUID: Swift.String? {
+    get
+  }
   public var endiosConfig: ChangersSDK.EndiosConfig? {
     get
   }
@@ -198,6 +201,9 @@ public struct ChangersStatistic : Swift.Codable {
       get
     }
     public var goalReached: Swift.Bool {
+      get
+    }
+    public var projectGoalReached: Swift.Bool {
       get
     }
     public func encode(to encoder: any Swift.Encoder) throws

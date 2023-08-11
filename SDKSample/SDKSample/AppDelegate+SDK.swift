@@ -13,23 +13,23 @@ import UIKit
 struct ChangersHelper {
     
     static var clientSecret: String { // client secret provided by Changers, they are different between each env
-        return "<CLIENT_SECRET>"
+        return "aGMQlPtoZB16HCdmUPldw5eNk1LubMR47JPE9VFL"
     }
     
     
     static var clientId: Int { // client id provided by Changers, they are different between each env
-        return 0
+        return 19
     }
     
     static var clientName: String {
-        return "<CLIENT_NAME"
+        return "payiq"
     }
         
     static var config: ChangersConfig {
         return ChangersConfig(clientId: ChangersHelper.clientId,
                               clientSecret: ChangersHelper.clientSecret,
                               clientName: ChangersHelper.clientName,
-                              environment: ChangersEnv.stage) // .stage and .production are available, each environement have their own specific clientId, clientSecret
+                              environment: ChangersEnv.production) // .stage and .production are available, each environement have their own specific clientId, clientSecret
     }
     
     static var changersUUID: String? {

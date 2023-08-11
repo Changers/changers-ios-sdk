@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		D/szCiu9SjR/2LdN0EERY+Pmcc4=
+		CbNz4Wxbv5dz6VQGqDYVi454jSI=
 		</data>
 		<key>InformationViewController.nib</key>
 		<data>
@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		TQ13hWcC+cSqV/LyHii+6VL+SEY=
+		bme8GkZ8LIpA2iYOBbBg+58cElA=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		BhmLzVRYlbYRQJ32AsSH40GQWX4=
+		4Wvwjz9VjReSYdzKm8q1mo9BZTc=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		BxUhafLjAfs0rZJ23SIuKF49Vww=
+		TlhCocrEXRWFF/R/Y+lG7gr2AaE=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BhmLzVRYlbYRQJ32AsSH40GQWX4=
+		4Wvwjz9VjReSYdzKm8q1mo9BZTc=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1JbUx+gsopTbvz0roToRv6HtnzI=
+		js6j2h5XX6vLOoIIduemapm5uFw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -56,7 +56,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NX1JdOue+OFfsdH2ftIznWiGD0g=
+			dg67kVMLUGdQtn0Ez8/JxPE4AN0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -114,35 +114,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LNDarGhttZGMR18kk3bhVe2egogxz9RTsXbCdJNBJeo=
+			cmve7iw4S7xLIxwS50o0cHnhrfGssCJDHdCkSiBDai4=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zx6tJqpRkkIY6u0k3IZzVDxxRN/vJYOffMP1pt/F2Gs=
+			72oFns6q7ROFiZGgPg3+mdx9cwyDQFyBasN3frxFiE8=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5ntfbdYCpk3dumPFWq+LA8xHCXk9DgW2FRpZvUfoQ0=
+			Z41JPDi7b78QwHhaEeSpEzck0gfT0ya092dkh/Ep/Ks=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zx6tJqpRkkIY6u0k3IZzVDxxRN/vJYOffMP1pt/F2Gs=
+			72oFns6q7ROFiZGgPg3+mdx9cwyDQFyBasN3frxFiE8=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gu9UFkXU+rxepfR3ISJqc3rbASXm+FpTlqUylrpgVkY=
+			Bry5m3dJ4MdMj9vtIt/1iv9z7QeeHhh+B3i1/yfLIhI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZW1HdTbbdMZBYfpB+6jgDnUFdht9ZfBnbnsDAuZ8H0=
+			813kpq9jkdZfMvnK9v7egSRDfYdZnM1mdl07MCssf2o=
 			</data>
 			<key>optional</key>
 			<true/>

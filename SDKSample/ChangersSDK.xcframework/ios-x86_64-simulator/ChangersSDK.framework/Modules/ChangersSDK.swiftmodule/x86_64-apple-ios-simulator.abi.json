@@ -1110,6 +1110,62 @@
           },
           {
             "kind": "Var",
+            "name": "motionTagUUID",
+            "printedName": "motionTagUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ChangersSDK0A8InstanceC13motionTagUUIDSSSgvp",
+            "mangledName": "$s11ChangersSDK0A8InstanceC13motionTagUUIDSSSgvp",
+            "moduleName": "ChangersSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ChangersSDK0A8InstanceC13motionTagUUIDSSSgvg",
+                "mangledName": "$s11ChangersSDK0A8InstanceC13motionTagUUIDSSSgvg",
+                "moduleName": "ChangersSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "endiosConfig",
             "printedName": "endiosConfig",
             "children": [
@@ -5270,6 +5326,47 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "projectGoalReached",
+                "printedName": "projectGoalReached",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11ChangersSDK0A9StatisticV7CharityV18projectGoalReachedSbvp",
+                "mangledName": "$s11ChangersSDK0A9StatisticV7CharityV18projectGoalReachedSbvp",
+                "moduleName": "ChangersSDK",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11ChangersSDK0A9StatisticV7CharityV18projectGoalReachedSbvg",
+                    "mangledName": "$s11ChangersSDK0A9StatisticV7CharityV18projectGoalReachedSbvg",
+                    "moduleName": "ChangersSDK",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -7787,231 +7884,231 @@
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 4577,
+      "offset": 4584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 5500,
+      "offset": 5507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 6374,
+      "offset": 6381,
       "length": 75,
       "value": "\"[Changers] User is still logged in. You need to call logoutUser() before.\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 6533,
+      "offset": 6540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 7326,
+      "offset": 7333,
       "length": 13,
       "value": "\"load config\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 7670,
+      "offset": 7677,
       "length": 15,
       "value": "\"add observers\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 8179,
+      "offset": 8186,
       "length": 37,
       "value": "\"Trying to log in with uuid: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 8215,
+      "offset": 8222,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 8225,
+      "offset": 8232,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 9288,
+      "offset": 9295,
       "length": 17,
       "value": "\"Scanned QR code\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 9541,
+      "offset": 9548,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 9719,
+      "offset": 9726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 10108,
+      "offset": 10115,
       "length": 47,
       "value": "\"fetch notification credentials about to start\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 10232,
+      "offset": 10239,
       "length": 56,
       "value": "\"fetch notification credentials - Changers is not ready\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 10448,
+      "offset": 10455,
       "length": 38,
       "value": "\"fetch notification credentials start\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 10791,
+      "offset": 10798,
       "length": 57,
       "value": "\"fetchStatistic() EndiosAdapter statistic about to start\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 11057,
+      "offset": 11064,
       "length": 51,
       "value": "\"fetchStatistic() EndiosAdapter has no credentials\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 11251,
+      "offset": 11258,
       "length": 24,
       "value": "\"fetchStatistic() start\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 11466,
+      "offset": 11473,
       "length": 58,
       "value": "\"fetchEndios() EndiosAdapter endios config about to start\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 11745,
+      "offset": 11752,
       "length": 48,
       "value": "\"fetchEndios() EndiosAdapter has no credentials\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 11949,
+      "offset": 11956,
       "length": 21,
       "value": "\"fetchEndios() start\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 12399,
+      "offset": 12406,
       "length": 25,
       "value": "\"handleAutomaticTracking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 12728,
+      "offset": 12735,
       "length": 129,
       "value": "\"appDidBecomeActive Automatic tracking state : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 12822,
+      "offset": 12829,
       "length": 13,
       "value": "\"is tracking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 12838,
+      "offset": 12845,
       "length": 17,
       "value": "\"is not tracking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 12856,
+      "offset": 12863,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 13580,
+      "offset": 13587,
       "length": 12,
       "value": "\"isTracking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 14145,
+      "offset": 14152,
       "length": 12,
       "value": "\"permission\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 14160,
+      "offset": 14167,
       "length": 14,
       "value": "\"notification\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 14337,
+      "offset": 14344,
       "length": 8,
       "value": "\"motion\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 14762,
+      "offset": 14769,
       "length": 11,
       "value": "\"new_token\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 15677,
+      "offset": 15684,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 15801,
+      "offset": 15808,
       "length": 7,
       "value": "\"error\""
     },
@@ -8025,553 +8122,553 @@
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16016,
+      "offset": 16023,
       "length": 56,
       "value": "\"SDK Location CLAuthorizationStatus: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16071,
+      "offset": 16078,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16543,
+      "offset": 16550,
       "length": 47,
       "value": "\"error notification Fail with error : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16589,
+      "offset": 16596,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16627,
+      "offset": 16634,
       "length": 39,
       "value": "\"error notification Fail with no error\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16814,
+      "offset": 16821,
       "length": 29,
       "value": "\"setup finished successfully\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16920,
+      "offset": 16927,
       "length": 43,
       "value": "\"Changers is not ready yet to finish setup\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 16988,
+      "offset": 16995,
       "length": 115,
       "value": "\"setupDidFinish should not be called if credential does not have user UUID, it should be checked before calling it\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 18130,
+      "offset": 18137,
       "length": 23,
       "value": "\"auth error : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 18152,
+      "offset": 18159,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 18614,
+      "offset": 18621,
       "length": 38,
       "value": "\"request failed with error : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 18651,
+      "offset": 18658,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "IntegerLiteral",
-      "offset": 18799,
+      "offset": 18806,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 18898,
+      "offset": 18905,
       "length": 92,
       "value": "\"request failed with error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 18989,
+      "offset": 18996,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "IntegerLiteral",
-      "offset": 19260,
+      "offset": 19267,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 19359,
+      "offset": 19366,
       "length": 87,
       "value": "\"request failed with error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 19445,
+      "offset": 19452,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "IntegerLiteral",
-      "offset": 19706,
+      "offset": 19713,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 19855,
+      "offset": 19862,
       "length": 88,
       "value": "\"request failed with error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 19942,
+      "offset": 19949,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 20270,
+      "offset": 20277,
       "length": 36,
       "value": "\"request failed with unknownn error\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 20738,
+      "offset": 20745,
       "length": 24,
       "value": "\"stats error : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 20761,
+      "offset": 20768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 21125,
+      "offset": 21132,
       "length": 38,
       "value": "\"request failed with error : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 21162,
+      "offset": 21169,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "IntegerLiteral",
-      "offset": 21310,
+      "offset": 21317,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 21409,
+      "offset": 21416,
       "length": 92,
       "value": "\"request failed with error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 21500,
+      "offset": 21507,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "IntegerLiteral",
-      "offset": 21668,
+      "offset": 21675,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 21767,
+      "offset": 21774,
       "length": 87,
       "value": "\"request failed with error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 21853,
+      "offset": 21860,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "IntegerLiteral",
-      "offset": 22016,
+      "offset": 22023,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 22165,
+      "offset": 22172,
       "length": 88,
       "value": "\"request failed with error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 22252,
+      "offset": 22259,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 22481,
+      "offset": 22488,
       "length": 36,
       "value": "\"request failed with unknownn error\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 22844,
+      "offset": 22851,
       "length": 62,
       "value": "\"handle web app interface with notification : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 22905,
+      "offset": 22912,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 22959,
+      "offset": 22966,
       "length": 11,
       "value": "\"interface\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 23076,
+      "offset": 23083,
       "length": 45,
       "value": "\"interface type is not sent: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 23120,
+      "offset": 23127,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 23429,
+      "offset": 23436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 24856,
+      "offset": 24863,
       "length": 20,
       "value": "\"USER IS LOGGED IN!\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 24991,
+      "offset": 24998,
       "length": 24,
       "value": "\"USER IS NOT LOGGED IN!\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 25180,
+      "offset": 25187,
       "length": 56,
       "value": "\"error decoding ChangersInterfaceUpdateToken : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 25235,
+      "offset": 25242,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 25717,
+      "offset": 25724,
       "length": 11,
       "value": "\"BadgeData\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 25834,
+      "offset": 25841,
       "length": 43,
       "value": "\"error decoding badge interface : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 25876,
+      "offset": 25883,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26186,
+      "offset": 26193,
       "length": 14,
       "value": "\"ReferralData\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26300,
+      "offset": 26307,
       "length": 36,
       "value": "\"error decoding referral : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26335,
+      "offset": 26342,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26670,
+      "offset": 26677,
       "length": 13,
       "value": "\"coordinates\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26686,
+      "offset": 26693,
       "length": 10,
       "value": "\"latitude\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26730,
+      "offset": 26737,
       "length": 11,
       "value": "\"longitude\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26777,
+      "offset": 26784,
       "length": 19,
       "value": "\"formatted_address\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26915,
+      "offset": 26922,
       "length": 57,
       "value": "\"error decoding RequestGiveDirectionInterface : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 26971,
+      "offset": 26978,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 27837,
+      "offset": 27844,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 28553,
+      "offset": 28560,
       "length": 40,
       "value": "\"error decoding notification : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 28592,
+      "offset": 28599,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 29603,
+      "offset": 29610,
       "length": 47,
       "value": "\"error decoding request_permissions : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 29649,
+      "offset": 29656,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30060,
+      "offset": 30067,
       "length": 7,
       "value": "\"color\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30093,
+      "offset": 30100,
       "length": 9,
       "value": "\"#ffffff\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30192,
+      "offset": 30199,
       "length": 38,
       "value": "\"error decoding status bar : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30229,
+      "offset": 30236,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 30307,
+      "offset": 30314,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30719,
+      "offset": 30726,
       "length": 25,
       "value": "\"ChangersVoucherCodeData\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30851,
+      "offset": 30858,
       "length": 40,
       "value": "\"error decoding voucher code : \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 30890,
+      "offset": 30897,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "Array",
-      "offset": 31053,
+      "offset": 31060,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 31206,
+      "offset": 31213,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 31353,
+      "offset": 31360,
       "length": 47,
       "value": "\"Failed to load: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 31399,
+      "offset": 31406,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 31658,
+      "offset": 31665,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 31894,
+      "offset": 31901,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 32049,
+      "offset": 32056,
       "length": 17,
       "value": "\"error: \""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/WebApp\/ChangersInstance.swift",
       "kind": "StringLiteral",
-      "offset": 32065,
+      "offset": 32072,
       "length": 2,
       "value": "\"\""
     },
@@ -11630,140 +11727,140 @@
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1887,
       "length": 15,
       "value": "\"tree_planting\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1887,
       "length": 15,
       "value": "\"tree_planting\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3149,
+      "offset": 3275,
       "length": 9,
       "value": "\"recoins\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3194,
+      "offset": 3320,
       "length": 9,
       "value": "\"walking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3239,
+      "offset": 3365,
       "length": 9,
       "value": "\"cycling\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3405,
       "length": 13,
       "value": "\"co2_avoided\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3149,
+      "offset": 3275,
       "length": 9,
       "value": "\"recoins\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3194,
+      "offset": 3320,
       "length": 9,
       "value": "\"walking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3239,
+      "offset": 3365,
       "length": 9,
       "value": "\"cycling\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3279,
+      "offset": 3405,
       "length": 13,
       "value": "\"co2_avoided\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3898,
+      "offset": 4024,
       "length": 9,
       "value": "\"recoins\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3943,
+      "offset": 4069,
       "length": 9,
       "value": "\"walking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3988,
+      "offset": 4114,
       "length": 9,
       "value": "\"cycling\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4154,
       "length": 13,
       "value": "\"co2_avoided\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 4076,
+      "offset": 4202,
       "length": 21,
       "value": "\"co2_for_next_recoin\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3898,
+      "offset": 4024,
       "length": 9,
       "value": "\"recoins\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3943,
+      "offset": 4069,
       "length": 9,
       "value": "\"walking\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 3988,
+      "offset": 4114,
       "length": 9,
       "value": "\"cycling\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4154,
       "length": 13,
       "value": "\"co2_avoided\""
     },
     {
       "filePath": "\/Users\/apple\/Documents\/Changers\/iOS-SDK\/changers-sdk\/changers-sdk\/ChangersStatistic\/ChangersStatistic.swift",
       "kind": "StringLiteral",
-      "offset": 4076,
+      "offset": 4202,
       "length": 21,
       "value": "\"co2_for_next_recoin\""
     },
