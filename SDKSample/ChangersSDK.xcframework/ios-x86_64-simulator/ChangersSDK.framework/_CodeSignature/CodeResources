@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		BvDWKWatGDibhc9TdJ/yscs+kDM=
+		/cpdaivGtK5PozaeJXYQAPtqvzU=
 		</data>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<data>
-		MJ/LYnEiZhAX4at5beljjkMHOFU=
+		GYWacxnhNyE4m67LH1iRnTzOqvc=
 		</data>
 		<key>Headers/changers_sdk.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Jo3f8/Ws453bszjySja/wkrg6ic=
+		Hoi0XmuawzDvBuZtr5ePFPxtcS0=
 		</data>
 		<key>InformationViewController.nib</key>
 		<data>
-		ZGEuXda1LeKH8vEUdkSuZ0qDZb4=
+		UAF4lJ9VuGhqKG2TA6pxLIQ3GD4=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bme8GkZ8LIpA2iYOBbBg+58cElA=
+		SASf29xQHwoPjPvCYPESklYcEZ0=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6dCttUH10Gwo6K6KhW0m2YzsJm8=
+		NY8d9Wj+VyxVORpkXiVHOlvJ0lw=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yn1PD7XujrSVwpHThcxww6/QVvY=
+		FJIj6d9vETe82tcqpkwoX17++M0=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6dCttUH10Gwo6K6KhW0m2YzsJm8=
+		NY8d9Wj+VyxVORpkXiVHOlvJ0lw=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4FnrfE2dWMKz+nKvJUvO8otSau0=
+		Nlc9QEvtnJiIrRdqDpCEOS8a/3o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,13 +50,13 @@
 		</data>
 		<key>ScannerViewController.nib</key>
 		<data>
-		ziYJ6QDbit+dSR59wsyutbtdNUw=
+		NjF2cNpbqowU4YB7mCtQzFzEnQo=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dg67kVMLUGdQtn0Ez8/JxPE4AN0=
+			NX1JdOue+OFfsdH2ftIznWiGD0g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xralFfLixIyP7U8JgJCpql6ORHNaGPX8R9Ox9kJsnik=
+			77O6Mn3zHxnOKKMDhftJrUrAh52MUHiI7F0mkxI4nfM=
 			</data>
 		</dict>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TvU6Ihcn8gQy4PY4RKICemkOLIpqLSxDtEvYZ5n5EP8=
+			ZI5cRIb9BmrvRROdjhC3CZ7UB2oDRxcXscSo4ctKPzo=
 			</data>
 		</dict>
 		<key>Headers/changers_sdk.h</key>
@@ -107,42 +107,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6t+hxLRPZ3+nZ/V3lmtvXfPIaTgEDXjwychoxXwStLQ=
+			oJBTZP60HJywqrfgetUrDAuJPMRWoveYi0R+3aIro9c=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cmve7iw4S7xLIxwS50o0cHnhrfGssCJDHdCkSiBDai4=
+			y7KCtZ3xkI/CyVXJNkcKG/LLTlmVOSfgUXfBBK/CrTU=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NMVVmt+OF1Zijosx/jEGr1QoCzEC4ctlcej9aYBydW8=
+			KhDHc8BQrbRTH9chK9516R/WwAX17QOF2U3VL2n+D6E=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJB03zIndu3ZMnlXs8tIoRInygXVhjTGBTMtxrmMoGQ=
+			fvDK1YP8BTXlMfCkdgXN04PA/kYcAAfguHgjKtEitsg=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NMVVmt+OF1Zijosx/jEGr1QoCzEC4ctlcej9aYBydW8=
+			KhDHc8BQrbRTH9chK9516R/WwAX17QOF2U3VL2n+D6E=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ChNzUEgXfqZ5s4hdylyekBlgnG0bcmy7ErUmMBYWW/4=
+			C6hkWC0xKNjPZ7DoCT8Km6MnGbLyeLyIcsVs8zn0KC0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -156,14 +156,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2FEOQjDZ8fT9l4jCtQJnoI+yShtbZ1tVnQu3+Oj680s=
+			uNBus1iUzhaJ0mIt9TrcFj3lWmICpU14Nk6BVpz6d9g=
 			</data>
 		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			813kpq9jkdZfMvnK9v7egSRDfYdZnM1mdl07MCssf2o=
+			dZW1HdTbbdMZBYfpB+6jgDnUFdht9ZfBnbnsDAuZ8H0=
 			</data>
 			<key>optional</key>
 			<true/>

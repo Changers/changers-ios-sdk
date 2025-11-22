@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		BvDWKWatGDibhc9TdJ/yscs+kDM=
+		/cpdaivGtK5PozaeJXYQAPtqvzU=
 		</data>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<data>
-		1I5Y8Cj3227Gjgnp1AzGOSoVwVo=
+		iP2q/qbpA3XNeyhiXgIedtaH7KU=
 		</data>
 		<key>Headers/changers_sdk.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CbNz4Wxbv5dz6VQGqDYVi454jSI=
+		HaZeC8/ixHV2cntluPI+z8QxlKc=
 		</data>
 		<key>InformationViewController.nib</key>
 		<data>
-		ZGEuXda1LeKH8vEUdkSuZ0qDZb4=
+		UAF4lJ9VuGhqKG2TA6pxLIQ3GD4=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		bme8GkZ8LIpA2iYOBbBg+58cElA=
+		VpG+I0rhSVVfxem3kg/1wgfmuIg=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		4Wvwjz9VjReSYdzKm8q1mo9BZTc=
+		JdlnrbV9+dZ0jgS0H9oqL22hWdM=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		TlhCocrEXRWFF/R/Y+lG7gr2AaE=
+		ACoyrEDi2jS/6xYrqo5VNv2UQuU=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4Wvwjz9VjReSYdzKm8q1mo9BZTc=
+		JdlnrbV9+dZ0jgS0H9oqL22hWdM=
 		</data>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		js6j2h5XX6vLOoIIduemapm5uFw=
+		+mL5zT+tm/+9iQvPr4SMgDlMqnM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,13 +50,13 @@
 		</data>
 		<key>ScannerViewController.nib</key>
 		<data>
-		ziYJ6QDbit+dSR59wsyutbtdNUw=
+		NjF2cNpbqowU4YB7mCtQzFzEnQo=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dg67kVMLUGdQtn0Ez8/JxPE4AN0=
+			NX1JdOue+OFfsdH2ftIznWiGD0g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xralFfLixIyP7U8JgJCpql6ORHNaGPX8R9Ox9kJsnik=
+			77O6Mn3zHxnOKKMDhftJrUrAh52MUHiI7F0mkxI4nfM=
 			</data>
 		</dict>
 		<key>Headers/ChangersSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oGNIrLrQ8t7yz9Fx+CXbNf77K6Zofmnfe+EO4ySroAI=
+			gWWMFHIc1IAGYD398hXZo/NL1FN+rifwQSevdP8bqqI=
 			</data>
 		</dict>
 		<key>Headers/changers_sdk.h</key>
@@ -107,42 +107,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6t+hxLRPZ3+nZ/V3lmtvXfPIaTgEDXjwychoxXwStLQ=
+			oJBTZP60HJywqrfgetUrDAuJPMRWoveYi0R+3aIro9c=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cmve7iw4S7xLIxwS50o0cHnhrfGssCJDHdCkSiBDai4=
+			zKbkJ5MeJki3yu0FRNRmoCWo+g9wcTvAFoB0dvQaZQA=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			72oFns6q7ROFiZGgPg3+mdx9cwyDQFyBasN3frxFiE8=
+			52ez/5THvgA1KO2d+81L/BZC/+5BRJXGit9i38p1Td4=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z41JPDi7b78QwHhaEeSpEzck0gfT0ya092dkh/Ep/Ks=
+			M2+8eXCnemnWLF9y1nKnsiBo0YTDs1Wqbl/bxElWL2w=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			72oFns6q7ROFiZGgPg3+mdx9cwyDQFyBasN3frxFiE8=
+			52ez/5THvgA1KO2d+81L/BZC/+5BRJXGit9i38p1Td4=
 			</data>
 		</dict>
 		<key>Modules/ChangersSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bry5m3dJ4MdMj9vtIt/1iv9z7QeeHhh+B3i1/yfLIhI=
+			uwQUy6yR1SzTFykeXJ2CUAxdHqerOK7Zj/Qi4nz/LNI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -156,14 +156,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2FEOQjDZ8fT9l4jCtQJnoI+yShtbZ1tVnQu3+Oj680s=
+			uNBus1iUzhaJ0mIt9TrcFj3lWmICpU14Nk6BVpz6d9g=
 			</data>
 		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			813kpq9jkdZfMvnK9v7egSRDfYdZnM1mdl07MCssf2o=
+			dZW1HdTbbdMZBYfpB+6jgDnUFdht9ZfBnbnsDAuZ8H0=
 			</data>
 			<key>optional</key>
 			<true/>

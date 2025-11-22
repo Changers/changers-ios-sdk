@@ -1,6 +1,7 @@
 # Common variables
-
+# https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml
 variables:
   - group: iOS
   - name: vmImage
-    value: 'macos-12'
+    value: 'macos-15'
+    #value: 'macos-latest'

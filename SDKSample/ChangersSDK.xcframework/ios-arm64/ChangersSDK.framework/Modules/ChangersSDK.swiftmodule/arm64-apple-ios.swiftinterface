@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChangersSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ChangersSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import CoreLocation
 import CoreMotion
+import DeveloperToolsSupport
 import Foundation
 import MapKit
 import MessageUI
@@ -13,16 +14,20 @@ import SafariServices
 import Social
 import StoreKit
 import Swift
+import SwiftUI
 import UIKit.UIDevice
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum ChangersEnv : Swift.String {
   case stage
   case production
   case development
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -45,26 +50,37 @@ public typealias UUID = Swift.String
   public var hasAccessToken: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadWebApp(on viewController: UIKit.UIViewController, page: ChangersSDK.ChangersPageEnum = ChangersPageEnum.main, completion: (() -> Swift.Void)? = nil, dismissCompletion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func webApp(at page: ChangersSDK.ChangersPageEnum = ChangersPageEnum.main, with dismissCompletion: (() -> Swift.Void)? = nil) -> UIKit.UIViewController
-  public var motionTagUUID: Swift.String? {
-    get
-  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var endiosConfig: ChangersSDK.EndiosConfig? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var changersStatistic: ChangersSDK.ChangersStatistic? {
     get
   }
+  #endif
   public var isWebAppReadyForDeepLinks: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public var userUUID: Swift.String? {
     get
   }
+  #endif
   public var debug: Swift.Bool {
     get
     set
   }
   public var isWebViewLogsEnabled: Swift.Bool {
+    get
+    set
+  }
+  public var isWebViewInspectable: Swift.Bool {
     get
     set
   }
@@ -78,18 +94,32 @@ public typealias UUID = Swift.String
   }
   public func stopTracking()
   public func clearCache()
-  public func clearTrackingData()
+  public func stopTrackingAndClearData()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func load(config: ChangersSDK.ChangersConfig, apn: Swift.Bool = false, appName: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func registerUser(authenticationDelegate: (any ChangersSDK.ChangersAuthenticationDelegate)? = nil, setupDelegate: (any ChangersSDK.ChangersDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loginUser(uuid: ChangersSDK.UUID, authenticationDelegate: (any ChangersSDK.ChangersAuthenticationDelegate)? = nil, setupDelegate: (any ChangersSDK.ChangersDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func setup(authenticationDelegate: (any ChangersSDK.ChangersAuthenticationDelegate)? = nil)
+  #endif
   public func logoutUser()
   public func updateNotificationPermissions(enabled: Swift.Bool)
   public func scannedQrCode(with url: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func referralLink(_ str: Swift.String?) -> Swift.Bool
+  #endif
   public func fetchNotificationCredentials()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchStatistic(delegate: (any ChangersSDK.ChangersStatisticDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchEndiosConfig(delegate: (any ChangersSDK.ChangersEndiosDelegate)? = nil)
+  #endif
   public func handleEvents(forBackgroundURLSession identifier: Swift.String, completionHandler: @escaping () -> Swift.Void)
   @objc deinit
 }
@@ -112,14 +142,18 @@ extension Foundation.URLSession : ChangersSDK.URLSessionProtocol {
 }
 @objc @_inheritsConvenienceInitializers public class ChangersTracking : ObjectiveC.NSObject {
   public static var sharedInstance: ChangersSDK.ChangersTracking
+  #if compiler(>=5.3) && $NonescapableTypes
   public func initializeMotionTag(with launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  #endif
   public func handleEvents(forBackgroundURLSession identifier: Swift.String, completionHandler: @escaping () -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
 extension ChangersSDK.ChangersTracking : MotionTagSDK.MotionTagDelegate {
-  @objc dynamic public func didTrackLocation(_ location: CoreLocation.CLLocation)
+  @objc dynamic public func didTrackLocation(_ location: _LocationEssentials.CLLocation)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func dataUploadWithTracked(from startDate: Foundation.Date, to endDate: Foundation.Date, didCompleteWithError error: (any Swift.Error)?)
+  #endif
   @objc dynamic public func trackingStatusChanged(_ isTracking: Swift.Bool)
   @objc dynamic public func locationAuthorizationStatusDidChange(_ status: CoreLocation.CLAuthorizationStatus, precise: Swift.Bool)
 }
@@ -133,12 +167,16 @@ public struct EndiosConfig : Swift.Codable {
   public var singularCoinName: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func imageURLForStatistic(_ statistic: ChangersSDK.ChangersStatistic?) -> Swift.String?
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol ChangersNotificationDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func notificationCredentialsDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  #endif
   func notificationCredentialsDidSuccess(with notificationIdentifier: Swift.String, userId: Swift.String, header: [Swift.String : Swift.String])
   func notification(enabled: Swift.Bool)
 }
@@ -166,15 +204,19 @@ public enum ChangersAuthenticateError : Swift.Error {
   }
 }
 extension ChangersSDK.ChangersAuthenticateError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public protocol ChangersAuthenticationDelegate : AnyObject {
   func didSetupUser(with uiid: Swift.String)
 }
 public protocol ChangersStatisticDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func statisticDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  #endif
   func statisticDidSuccess(with statistic: ChangersSDK.ChangersStatistic)
 }
 public struct ChangersStatistic : Swift.Codable {
@@ -203,9 +245,6 @@ public struct ChangersStatistic : Swift.Codable {
     public var goalReached: Swift.Bool {
       get
     }
-    public var projectGoalReached: Swift.Bool {
-      get
-    }
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -231,10 +270,14 @@ public struct ChangersStatistic : Swift.Codable {
 }
 public protocol ChangersDelegate : AnyObject {
   func setupDidFinish()
+  #if compiler(>=5.3) && $NonescapableTypes
   func setupDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  #endif
 }
 public protocol ChangersEndiosDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func fetchEndiosConfigDidFail(with error: ChangersSDK.ChangersAuthenticateError?)
+  #endif
   func fetchEndiosConfigDidSuccess(with endiosConfig: ChangersSDK.EndiosConfig)
 }
 extension ChangersSDK.ChangersEnv : Swift.Equatable {}
