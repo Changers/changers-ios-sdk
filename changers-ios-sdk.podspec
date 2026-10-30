@@ -1,10 +1,11 @@
 
 Pod::Spec.new do |s|
     s.name         = "changers-ios-sdk"
-    s.version      = "1.5.2"
-    s.summary      = "A brief description of Changers iOS SDK project."
+    s.version      = "4.3.0"
+    s.summary      = "Changers iOS SDK"
     s.description  = <<-DESC
-    An extended description of Changers iOS SDK project.
+    The Changers iOS SDK: sustainable mobility tracking, the Changers web
+    application, and deep link handling for QR codes and referral links.
     DESC
     s.homepage     = "https://changers.com/"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
@@ -13,12 +14,8 @@ Pod::Spec.new do |s|
                 }
     s.author             = { "Clement Yerochewski" => "c.yerochewski@changers.com" }
     s.source       = { :git => "https://github.com/Changers/changers-ios-sdk.git", :tag => "#{s.version}" }
-    s.public_header_files = "ChangersSDK.framework/Headers/*.h"
-    s.source_files = "ChangersSDK.framework/Headers/*.h"
-    s.vendored_frameworks = "ChangersSDK.framework"
-    s.platform = :sos
+    s.vendored_frameworks = "ChangersSDK.xcframework"
+    s.platform = :ios, '15.0'
     s.swift_version = "5.0"
-    s.ios.deployment_target  = '11.0'
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.ios.deployment_target  = '15.0'
 end
