@@ -9,7 +9,7 @@
 	+ "Privacy - Motion Usage Description" string // e.g: For the automatic tracking measurement we need the access of the Motion Activity
 	+"Privacy - Camera Usage Description" string // e.g: The use of the camera allows you to redeem Climate Coins and to take part in climate measures.
 
-+ minimum deployment target 13.0
++ minimum deployment target 15.0
 
 ## Authorizations
 The SDK requires two authorizations:  
@@ -33,7 +33,9 @@ You can also drag and drop the Changers SDK [here](https://github.com/Changers/c
   Manually drag and drop `ChangersSDK.xcframework` to your project
 ```
 
-**Note**: to run on simulator you need to exclude arm64 architecture from the iOS Simulator
+The xcframework ships `ios-arm64` and `ios-arm64_x86_64-simulator` slices, so it runs on
+Apple Silicon simulators with no architecture exclusions. If your project still sets
+`EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64` for an older version of this SDK, remove it.
 
 ### MotionTagSDK
 
@@ -56,6 +58,11 @@ func load(config: ChangersConfig)
 func handleEvents(forBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void)
 func loadWebApp(on viewController: UIViewController, completion: (() -> Void)? = nil, dismissCompletion: (() -> Void)? = nil)
 func webApp(with dismissCompletion: (() -> Void)? = nil) -> UIViewController
+
+@discardableResult func handleDeepLink(_ url: String) -> Bool
+@discardableResult func handleDeepLink(_ url: URL) -> Bool
+func openLink(_ url: String, on viewController: UIViewController, page: ChangersPageEnum = .main)
+func openLink(_ url: URL, on viewController: UIViewController, page: ChangersPageEnum = .main)
 ```
 
 
@@ -148,19 +155,45 @@ enum ChangersSDKError: Error {
 }
 ```
 
-## 5. Universal links
-We use universal links to show the offer after scanning a QR code
+## 5. Deep links
 
-To enable universal links you will have to provide us with your apple team ID & bundle ID so we can update our `apple-app-site-association` file on the server.
+The SDK handles two kinds of link, and decides between them itself:
 
-Then you will have to enable assosiated domain in your project to do that head to project settings > signing & capabilities > tap + icon > associated domains.
+| Link | What the SDK does |
+|---|---|
+| Referral / invite (`…/invite/<id>`) | Stores the referee id and submits it to the Changers API. |
+| Anything else (QR code, campaign, voucher…) | Holds it until the web application has finished onboarding, then delivers it. |
 
-Add the following for production: `applinks:api.klima-taler.com/qrcodes/*` 
-and for staging: `applinks:api.coin-stage.de/qrcodes/*` 
+Hand every link to `handleDeepLink`. Your app does not need to work out which kind it is.
 
-To handle when the app is opened with a universal link you will have to implement the following
-
+```swift
+@discardableResult
+func handleDeepLink(_ url: URL) -> Bool   // true when it was handled as a referral
 ```
+
+If your app has no screen of its own to show first, `openLink` takes the link and presents
+the Changers web application in one call:
+
+```swift
+func openLink(_ url: URL, on viewController: UIViewController, page: ChangersPageEnum = .main)
+```
+
+`openLink` needs a view controller already in the window hierarchy, so it cannot be called
+from `didFinishLaunchingWithOptions`. Call `handleDeepLink` there instead — the link is held
+until the web application is ready either way.
+
+### Universal links
+
+To enable universal links you will have to provide us with your apple team ID & bundle ID so
+we can update our `apple-app-site-association` file on the server.
+
+Then enable associated domains in your project: project settings > signing & capabilities >
+tap + icon > associated domains.
+
+Add the following for production: `applinks:api.klima-taler.com/qrcodes/*`
+and for staging: `applinks:api.coin-stage.de/qrcodes/*`
+
+```swift
 func application(_ application: UIApplication,
                  continue userActivity: NSUserActivity,
                  restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
@@ -169,12 +202,44 @@ func application(_ application: UIApplication,
         return false
     }
 
-    ChangersInstance.shared().scannedQrCode(with: incomingURL.absoluteString)
+    ChangersInstance.shared().handleDeepLink(incomingURL)
     return true
-
 }
 ```
-This way we detect the url and pass it to the SDK to handle it accordingly
+
+### Custom URL schemes
+
+If you also register a custom scheme, check the link's host before handing it over — the SDK
+forwards whatever it is given, and other SDKs in your app may use your scheme for their own
+callbacks.
+
+```swift
+func application(_ app: UIApplication, open url: URL,
+                 options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
+    guard let host = url.host, myChangersHosts.contains(host) else { return false }
+    ChangersInstance.shared().handleDeepLink(url)
+    return true
+}
+```
+
+### Delivery timing
+
+A link that arrives before the web application reports that onboarding is complete is held in
+`UserDefaults` and survives app termination. Only one link is held at a time — a second
+replaces an undelivered first one.
+
+### Before 4.3.0
+
+`handleDeepLink` and `openLink` are new in 4.3.0. On earlier versions your app does the
+routing itself, which is exactly what `handleDeepLink` now does internally:
+
+```swift
+if !ChangersInstance.shared().referralLink(url.absoluteString) {
+    ChangersInstance.shared().scannedQrCode(with: url.absoluteString)
+}
+```
+
+Both methods are still public and unchanged.
 
 ## 6. Example
 
